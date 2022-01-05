@@ -11,9 +11,7 @@ namespace Tasks
         static void Main(string[] args)
         {
 
-
         }
-
 
     }
 
@@ -27,7 +25,51 @@ namespace Tasks
             
             
             
-         
+            
+  #region Task N4 (udalit duplicate, vopros nascet !)
+        //    string x = "ellllmmarr";
+        //    Console.WriteLine(Remover(x));
+
+
+
+        //}
+
+        //public static string Remover(string input)
+        //{
+        //    string newWord = "";
+        //    char[] chars = input.ToCharArray();
+        //    for (int i = 0; i < chars.Length; i++)
+        //    {
+        //        if(!newWord.Contains(chars[i]))
+        //        {
+        //            newWord=newWord + chars[i];
+        //        }
+        //    }
+        //    return newWord;
+        //}
+        #endregion
+
+
+           
+#region Task N2
+        //    string x = "siz gotsuz axi";
+        //    Console.WriteLine(Reversed(x));
+
+        //}
+
+        //public static string Reversed (string input)
+        //{
+        //    char [] newchar=input.ToCharArray();
+        //    string newWord = "";
+        //    for (int i = input.Length - 1; i > -1; i--)
+        //    {
+        //        newWord=newWord + newchar[i];
+               
+        //    }
+        //    return newWord;
+        //}
+        #endregion
+
 
 
 #region Task N9
