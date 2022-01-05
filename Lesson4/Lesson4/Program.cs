@@ -10,6 +10,14 @@ namespace Lesson4
     {
         static void Main(string[] args)
         {
+            
+         
+
+        }
+
+        public  static string Reverse(string soz)
+        {
+
         }
     }
 }
