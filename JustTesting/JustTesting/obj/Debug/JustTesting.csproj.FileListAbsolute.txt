@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\bin\Debug\JustTesting.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\bin\Debug\JustTesting.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\bin\Debug\JustTesting.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\obj\Debug\JustTesting.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\obj\Debug\JustTesting.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\obj\Debug\JustTesting.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\obj\Debug\JustTesting.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\JustTesting\JustTesting\obj\Debug\JustTesting.pdb
