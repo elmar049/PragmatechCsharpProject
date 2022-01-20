@@ -77,8 +77,9 @@ namespace Apteka
                     //newList[i].Number = DermanSayiii;
 
 
-                    Console.WriteLine(yenipil.Name + " dermanni  elave olundu ve sayida " + yenipil.Number + " oldu");
+                    Console.WriteLine(newList[newList.Length-1].Name + " dermanni  elave olundu ve sayida " + newList[newList.Length - 1].Number + " oldu");
                 }
+                say = 0;
                 
 
 
