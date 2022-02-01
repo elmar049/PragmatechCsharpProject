@@ -32,7 +32,7 @@ namespace TaskMedicinee
             {
                 Console.WriteLine("Depoda bu qeder derman yoxudr");
             }
-                  
+                  //ddedeff
         }
     }
 }
