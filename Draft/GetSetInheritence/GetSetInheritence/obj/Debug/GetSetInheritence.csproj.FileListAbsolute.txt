@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\bin\Debug\GetSetInheritence.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\bin\Debug\GetSetInheritence.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\bin\Debug\GetSetInheritence.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\obj\Debug\GetSetInheritence.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\obj\Debug\GetSetInheritence.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\obj\Debug\GetSetInheritence.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\obj\Debug\GetSetInheritence.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\GetSetInheritence\GetSetInheritence\obj\Debug\GetSetInheritence.pdb
