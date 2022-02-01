@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\bin\Debug\OOP.Abstact_Class_Task.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\bin\Debug\OOP.Abstact_Class_Task.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\bin\Debug\OOP.Abstact_Class_Task.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\obj\Debug\OOP. Abstact Class Task.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\obj\Debug\OOP. Abstact Class Task.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\obj\Debug\OOP. Abstact Class Task.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\obj\Debug\OOP.Abstact_Class_Task.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\OOP. Abstact Class Task\OOP. Abstact Class Task\obj\Debug\OOP.Abstact_Class_Task.pdb
