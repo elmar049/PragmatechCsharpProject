@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\bin\Debug\Task8.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\bin\Debug\Task8.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\bin\Debug\Task8.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\obj\Debug\Task8.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\obj\Debug\Task8.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\obj\Debug\Task8.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\obj\Debug\Task8.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lesson4\Task8\Task8\obj\Debug\Task8.csproj.AssemblyReference.cache

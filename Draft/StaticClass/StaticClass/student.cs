@@ -23,11 +23,11 @@ namespace StaticClass
 
 
 
-        public Student(string name, string sruname, int age, DateTime birth)
+        public Student(string name, string sruname, int age, DateTime birth): this(name, age)
         {
-            _Name = name;
+            //_Name = name;
             _surName= sruname;
-            _Age = age;
+            //_Age = age;
             _Birth= birth;
             
         }

@@ -16,7 +16,7 @@ namespace StaticClass
 
 
 
-            Student std2 = new Student("elamr", "mammadov", 28, new DateTime(1993, 08, 23));
+            Student std2 = new Student("qusik", "mammadov", 28, new DateTime(1993, 08, 23));
             Student std3 = std2; // eto dva ssilochnie tipi dannix, kotoroe otnosyatda k odnomu istochniku...esli izmenaetsa odin to i izmenaetsa vtoroy
             std2.ChangeSurname("huseynov");
 
@@ -29,13 +29,16 @@ namespace StaticClass
 
 
             //no ESLI
-            Student std4 = new Student("elamr", "mammadov", 28, new DateTime(1993, 08, 23));
+            Student std4 = new Student("vasif", "mammadov", 28, new DateTime(1993, 08, 23));
             Student std5 = new Student(std4);
             std4.ChangeSurname("aliyeba");
 
             std4.Print();
-            std5.Print();
+            std5.Print();  // to zdes familiyii budu raznie, tak kak na 33 stroke mi sozdali dlya ref osoboe mesto v Ram pamyati, ctob oni ne menyaslis
 
+
+            Student test = new Student("hadi", "amirov", 14, new DateTime(2000, 12, 12));
+            test.Print();
 
 
 

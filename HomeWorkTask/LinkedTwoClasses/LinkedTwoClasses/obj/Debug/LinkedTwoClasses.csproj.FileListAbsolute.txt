@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\bin\Debug\LinkedTwoClasses.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\bin\Debug\LinkedTwoClasses.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\bin\Debug\LinkedTwoClasses.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\obj\Debug\LinkedTwoClasses.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\obj\Debug\LinkedTwoClasses.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\obj\Debug\LinkedTwoClasses.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\obj\Debug\LinkedTwoClasses.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\LinkedTwoClasses\LinkedTwoClasses\obj\Debug\LinkedTwoClasses.pdb

@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\bin\Debug\TaskMedicinee.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\bin\Debug\TaskMedicinee.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\bin\Debug\TaskMedicinee.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\obj\Debug\TaskMedicinee.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\obj\Debug\TaskMedicinee.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\obj\Debug\TaskMedicinee.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\obj\Debug\TaskMedicinee.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\TaskMedicinee\TaskMedicinee\obj\Debug\TaskMedicinee.pdb

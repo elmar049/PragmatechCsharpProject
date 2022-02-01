@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\obj\Debug\Calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Calculator\Calculator\obj\Debug\Calculator.pdb

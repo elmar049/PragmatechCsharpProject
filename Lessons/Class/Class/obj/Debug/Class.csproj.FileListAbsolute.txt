@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\bin\Debug\Class.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\bin\Debug\Class.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\bin\Debug\Class.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\obj\Debug\Class.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\obj\Debug\Class.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\obj\Debug\Class.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\obj\Debug\Class.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Class\Class\obj\Debug\Class.pdb
