@@ -1,8 +1,0 @@
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\bin\Debug\Construction.exe.config
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\bin\Debug\Construction.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\bin\Debug\Construction.pdb
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\obj\Debug\Construction.csproj.AssemblyReference.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\obj\Debug\Construction.csproj.SuggestedBindingRedirects.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\obj\Debug\Construction.csproj.CoreCompileInputs.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\obj\Debug\Construction.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Construction\Construction\obj\Debug\Construction.pdb

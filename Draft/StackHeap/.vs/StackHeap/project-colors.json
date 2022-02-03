@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e67c74b8-a3b3-45e1-81ed-c2f2f87cdd66": {
+      "ProjectGuid": "e67c74b8-a3b3-45e1-81ed-c2f2f87cdd66",
+      "DisplayName": "StackHeap",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

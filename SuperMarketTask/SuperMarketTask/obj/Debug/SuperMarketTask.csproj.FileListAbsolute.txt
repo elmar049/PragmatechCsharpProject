@@ -1,8 +1,0 @@
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\bin\Debug\SuperMarketTask.exe.config
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\bin\Debug\SuperMarketTask.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\bin\Debug\SuperMarketTask.pdb
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\obj\Debug\SuperMarketTask.csproj.AssemblyReference.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\obj\Debug\SuperMarketTask.csproj.SuggestedBindingRedirects.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\obj\Debug\SuperMarketTask.csproj.CoreCompileInputs.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\obj\Debug\SuperMarketTask.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\SuperMarketTask\SuperMarketTask\obj\Debug\SuperMarketTask.pdb

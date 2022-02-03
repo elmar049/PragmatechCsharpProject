@@ -10,15 +10,29 @@ namespace OOP.Abstact_Class_Task
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Insert your full name: ");
+            string _fullname=Console.ReadLine();
+
+            Console.WriteLine("Insert your e-mail: ");
+            string _email=Console.ReadLine();
+
+            Console.WriteLine("Insert your password");
+            string _password=Console.ReadLine();
+
             user user = new user();
-            user.FullName = "Elmar Mammadov";
-            user.Email = "mammadovelmar93@gmail.com";
-            user.Password = "JSJSJSJJaJJJJ";
+            user.FullName = _fullname;
+            user.Email = _email;
+            user.Password = _password;
+
+
+
+            //user.ShowInfo();
+            //Console.WriteLine("Your pass is " + user.PasswordChecker(user.Password));
 
 
 
             user.ShowInfo();
-            Console.WriteLine("Your pass is " + user.PasswordChecker(user.Password));
+            user.PasswordChecker2();
 
         }
     }

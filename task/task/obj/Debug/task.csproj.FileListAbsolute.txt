@@ -1,8 +1,0 @@
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\bin\Debug\task.exe.config
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\bin\Debug\task.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\bin\Debug\task.pdb
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\obj\Debug\task.csproj.AssemblyReference.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\obj\Debug\task.csproj.SuggestedBindingRedirects.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\obj\Debug\task.csproj.CoreCompileInputs.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\obj\Debug\task.exe
-C:\Users\elmar\Desktop\PragmatechCsharpProject\task\task\obj\Debug\task.pdb

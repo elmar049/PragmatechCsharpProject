@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\bin\Debug\StackHeap.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\bin\Debug\StackHeap.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\bin\Debug\StackHeap.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\obj\Debug\StackHeap.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\obj\Debug\StackHeap.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\obj\Debug\StackHeap.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\obj\Debug\StackHeap.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StackHeap\StackHeap\obj\Debug\StackHeap.pdb
