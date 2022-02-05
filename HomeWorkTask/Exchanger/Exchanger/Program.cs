@@ -125,11 +125,6 @@ namespace Exchanger
 
 
 
-    public enum CurrencyType
-    {
-        USD = 1,
-        Eu = 2,     
-        AZE = 3,
-    }
+    
 }
 
