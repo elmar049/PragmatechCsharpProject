@@ -79,6 +79,7 @@ namespace CurrencyExchangerTask
         USD=1,
         Eu=2,
         TL=3,
+        AZE=4,
     }
 }
 
