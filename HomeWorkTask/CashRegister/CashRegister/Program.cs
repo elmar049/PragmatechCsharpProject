@@ -10,6 +10,19 @@ namespace CashRegister
     {
         static void Main(string[] args)
         {
+            CashRegister app1 = new CashRegister(Currency.EU, 100);
+            app1.AddSale(Currency.USD, 1000);
+            app1.AddSale(Currency.USD, 1000);
+
+            app1.AddSale(Currency.tl, 1000);
+            app1.AddSale(Currency.tl, 1000);
+            app1.AddSale(Currency.tl, 1000);
+
+
+
+
+
+
         }
     }
 }

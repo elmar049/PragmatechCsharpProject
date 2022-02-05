@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0d6d4972-72b3-47e2-ac2b-6464af648248": {
+      "ProjectGuid": "0d6d4972-72b3-47e2-ac2b-6464af648248",
+      "DisplayName": "CashRegister",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
