@@ -46,20 +46,20 @@ namespace CashRegister
             }
             else
             {
-                if((Currency)Enum.Parse(typeof(Currency), evvelki)==Currency.USD  &&  (Currency)Enum.Parse(typeof(Currency), kassakurrr)== Currency.EU)
+                if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.EU)
                 {
                     cem = money * 1.12;
-                    TotalAmount=TotalAmount + cem;
+                    TotalAmount = TotalAmount + cem;
                     Console.WriteLine($"You added {money} EU, which make {cem} usd, in a cashRegister and now your money encreased to {TotalAmount}");
                 }
-                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
                 {
                     cem = money * 0.58;
                     TotalAmount = TotalAmount + cem;
                     Console.WriteLine($"You added {money} azn, which make {cem} usd, in a cashRegister and now your money encreased to {TotalAmount}");
                 }
 
-                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
                 {
                     cem = money / 2;
                     TotalAmount = TotalAmount + cem;
@@ -71,7 +71,7 @@ namespace CashRegister
                     TotalAmount = TotalAmount + cem;
                     Console.WriteLine($"You added {money} usd, which make {cem} eu, in a cashRegister and now your money encreased to {TotalAmount}");
                 }
-                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
                 {
                     cem = money * 1.7;
                     TotalAmount = TotalAmount + cem;
@@ -86,10 +86,60 @@ namespace CashRegister
                 }
 
             }
-           
-            
+
+
         }
 
+        public void removeSale(string kassakurrr, double money, string evvelki)
+        {
+            double cem = 0;
+            if ((Currency)Enum.Parse(typeof(Currency), kassakurrr) == ((Currency)Enum.Parse(typeof(Currency), evvelki)))
+            {
+                TotalAmount = TotalAmount - money;
+                Console.WriteLine($"You took {money} in a cashRegister and now your money decreased to {TotalAmount}");
+
+            }
+            else
+            {
+                if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.EU)
+                {
+                    cem = money * 1.12;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} EU, which make {cem} usd, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                {
+                    cem = money * 0.58;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} azn, which make {cem} usd, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
+                {
+                    cem = money / 1.12;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} usd, which make {cem} eu, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                {
+                    cem = money / 2;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} azn, which make {cem} eu, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
+                {
+                    cem = money * 1.7;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} usd, which make {cem} azn, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.EU)
+                {
+                    cem = money * 2;
+                    TotalAmount = TotalAmount - cem;
+                    Console.WriteLine($"You took {money} eu, which make {cem} azn, in a cashRegister and now your money decreased to {TotalAmount}");
+                }
+            }
+        }
 
 
 
@@ -104,7 +154,7 @@ namespace CashRegister
         AZN = 1,
         USD = 2,
         EU = 3,
-        
+
 
     }
 
