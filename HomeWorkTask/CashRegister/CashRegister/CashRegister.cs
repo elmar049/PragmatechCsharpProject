@@ -11,7 +11,7 @@ namespace CashRegister
         public double TotalAmount { get; set; }
         private int _totalSaleCount { get; set; }
         public Currency type;
-        public List<double> kassa = new List<double>();
+        public Dictionary<Currency, double> kassa = new Dictionary<Currency, double>();
 
 
         public int TotalSaleCount
@@ -27,94 +27,86 @@ namespace CashRegister
         }
 
 
-        public CashRegister(Currency tipi, double obwisumma)
+        public CashRegister(double obwisumma)
         {
-            type = tipi;
+            type = Currency.AZN;
             TotalAmount = obwisumma;
         }
 
 
-        public void AddSale(Currency tppii, double money)
+        public void AddSale(string kassakurrr, double money, string evvelki)
         {
-            double obwqakovu = 0;
-            double sum = 0;
-            if (tppii != type)
+            double cem = 0;
+            if ((Currency)Enum.Parse(typeof(Currency), kassakurrr) == ((Currency)Enum.Parse(typeof(Currency), evvelki)))
             {
-                if (tppii == Currency.USD)
-                {
-                    //if (Currency.USD == tppii)
+                TotalAmount = TotalAmount + money;
+                Console.WriteLine($"You added {money} in a cashRegister and now your money encreased to {TotalAmount}");
 
-                    ++TotalSaleCount;
-                    kassa.Add(money);
-
-                    for (int i = 0; i < kassa.Count; i++)
-                    {
-                        obwqakovu = obwqakovu + kassa[i];
-                    }
-                    sum = TotalAmount + obwqakovu * 1.7;
-
-
-                    Console.WriteLine($"You added {money} {Currency.USD} in a cashRegister and now your money encreased to {sum}, and total Sale Count is {TotalSaleCount}");
-                }
-                //if (tppii == Currency.EU)
-                //{
-
-                //    ++TotalSaleCount;
-                //    kassa.Add(money);
-
-                //    for (int i = 0; i < kassa.Count; i++)
-                //    {
-                //        sum = sum + kassa[kassa.Count-1]*1.9;
-                //    }
-
-
-
-                //    Console.WriteLine($"You added {money} {Currency.EU} in a cashRegister and now your money encreased to {sum}, and total Sale Count is {TotalSaleCount}");
-                //}
-                if (tppii == Currency.tl)
-                {
-                    double y = 0;
-
-                    ++TotalSaleCount;
-                    kassa.Add(money);
-                    for (int i = 0; i < kassa.Count; i++)
-                    {
-                        y = y + kassa[kassa.Count - 1] * 0.2;
-                    }
-                    sum = sum + y; 
-
-                    Console.WriteLine($"You added {money} {Currency.tl} in a cashRegister and now your money encreased to {sum}, and total Sale Count is {TotalSaleCount}");
-                }
 
             }
             else
             {
-                TotalAmount = TotalAmount + money;
-                ++TotalSaleCount;
+                if((Currency)Enum.Parse(typeof(Currency), evvelki)==Currency.USD  &&  (Currency)Enum.Parse(typeof(Currency), kassakurrr)== Currency.EU)
+                {
+                    cem = money * 1.12;
+                    TotalAmount=TotalAmount + cem;
+                    Console.WriteLine($"You added {money} EU, which make {cem} usd, in a cashRegister and now your money encreased to {TotalAmount}");
+                }
+                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.USD && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                {
+                    cem = money * 0.58;
+                    TotalAmount = TotalAmount + cem;
+                    Console.WriteLine($"You added {money} azn, which make {cem} usd, in a cashRegister and now your money encreased to {TotalAmount}");
+                }
 
-                Console.WriteLine($"You added {money} in a cashRegister and now your money encreased to {TotalAmount}, and total Sale Count is {TotalSaleCount}");
+                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.AZN)
+                {
+                    cem = money / 2;
+                    TotalAmount = TotalAmount + cem;
+                    Console.WriteLine($"You added {money} azn, which make {cem} eu, in a cashRegister and now your money encreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.EU && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
+                {
+                    cem = money / 1.12;
+                    TotalAmount = TotalAmount + cem;
+                    Console.WriteLine($"You added {money} usd, which make {cem} eu, in a cashRegister and now your money encreased to {TotalAmount}");
+                }
+                else if((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.USD)
+                {
+                    cem = money * 1.7;
+                    TotalAmount = TotalAmount + cem;
+                    Console.WriteLine($"You added {money} usd, which make {cem} azn, in a cashRegister and now your money encreased to {TotalAmount}");
+                }
+                else if ((Currency)Enum.Parse(typeof(Currency), evvelki) == Currency.AZN && (Currency)Enum.Parse(typeof(Currency), kassakurrr) == Currency.EU)
+                {
+                    cem = money * 2;
+                    TotalAmount = TotalAmount + cem;
+                    Console.WriteLine($"You added {money} eu, which make {cem} azn, in a cashRegister and now your money encreased to {TotalAmount}");
+
+                }
+
             }
+           
+            
         }
 
-        public void RemoveSale(Currency tppp, double moneyy)
-        {
 
-        }
+
 
     }
+
+
+
+
 
     public enum Currency
     {
-        USD = 1,
-        EU = 2,
-        AZN = 3,
-        tl = 4,
+        AZN = 1,
+        USD = 2,
+        EU = 3,
+        
 
     }
 
-    public enum PaymentType
-    {
-        Card,
-        Cash
-    }
+
 }
