@@ -47,7 +47,16 @@ namespace test
             public static int TotalSalesCount = 0;
             public static int TotalRemoveCount = 0;
             public static CurrencyType Currency;
-            public static Dictionary<CurrencyType, double> dict = new Dictionary<CurrencyType, double>();
+            public static Dictionary<CurrencyType, double> dict = new Dictionary<CurrencyType, double>()
+            {
+                { CurrencyType.AZN, 0 },
+                { CurrencyType.USD, 0 },
+                { CurrencyType.EUR, 0 },
+                { CurrencyType.TL, 0 },
+            };
+
+
+
 
 
 
@@ -57,157 +66,130 @@ namespace test
                 string currency2 = Console.ReadLine();
                 if (currency2 == "EUR")
                 {
-
-                    if (!dict.ContainsKey(CurrencyType.EUR))
+                    if (currency2 == currency)
                     {
-                        dict.Add(CurrencyType.EUR, mebleq);
+                        dict[CurrencyType.EUR] += mebleq;
                         TotalSalesCount++;
                     }
                     else
                     {
-
-                        if (currency2 == currency)
+                        if (currency == "AZN")
                         {
+                            mebleq = mebleq * 0.513;
                             dict[CurrencyType.EUR] += mebleq;
                             TotalSalesCount++;
                         }
-                        else
+                        if (currency == "USD")
                         {
-                            if (currency == "AZN")
-                            {
-                                mebleq = mebleq * 0.513;
-                                dict[CurrencyType.EUR] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "USD")
-                            {
-                                mebleq = mebleq * 0.87344;
-                                dict[CurrencyType.EUR] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "TL")
-                            {
-                                mebleq = mebleq * 0.064486;
-                                dict[CurrencyType.EUR] += mebleq;
-                                TotalSalesCount++;
-                            }
+                            mebleq = mebleq * 0.87344;
+                            dict[CurrencyType.EUR] += mebleq;
+                            TotalSalesCount++;
+                        }
+                        if (currency == "TL")
+                        {
+                            mebleq = mebleq * 0.064486;
+                            dict[CurrencyType.EUR] += mebleq;
+                            TotalSalesCount++;
                         }
                     }
-
                 }
+
+
                 else if (currency2 == "USD")
                 {
-                    if (!dict.ContainsKey(CurrencyType.USD))
+
+
+                    if (currency2 == currency)
                     {
-                        dict.Add(CurrencyType.USD, mebleq);
+                        dict[CurrencyType.USD] += mebleq;
                         TotalSalesCount++;
                     }
                     else
                     {
-
-                        if (currency2 == currency)
+                        if (currency == "AZN")
                         {
+                            mebleq = mebleq * 0.5886;
                             dict[CurrencyType.USD] += mebleq;
                             TotalSalesCount++;
                         }
-                        else
+                        if (currency == "EUR")
                         {
-                            if (currency == "AZN")
-                            {
-                                mebleq = mebleq * 0.5886;
-                                dict[CurrencyType.USD] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "EUR")
-                            {
-                                mebleq = mebleq * 1.14;
-                                dict[CurrencyType.USD] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "TL")
-                            {
-                                mebleq = mebleq * 0.073704;
-                                dict[CurrencyType.USD] += mebleq;
-                                TotalSalesCount++;
-                            }
+                            mebleq = mebleq * 1.14;
+                            dict[CurrencyType.USD] += mebleq;
+                            TotalSalesCount++;
+                        }
+                        if (currency == "TL")
+                        {
+                            mebleq = mebleq * 0.073704;
+                            dict[CurrencyType.USD] += mebleq;
+                            TotalSalesCount++;
                         }
                     }
+
                 }
                 if (currency2 == "AZN")
                 {
-                    if (!dict.ContainsKey(CurrencyType.AZN))
+
+
+                    if (currency2 == currency)
                     {
-                        dict.Add(CurrencyType.AZN, mebleq);
+                        dict[CurrencyType.AZN] += mebleq;
                         TotalSalesCount++;
                     }
                     else
                     {
-
-                        if (currency2 == currency)
+                        if (currency == "USD")
                         {
+                            mebleq = mebleq * 1.7;
                             dict[CurrencyType.AZN] += mebleq;
                             TotalSalesCount++;
                         }
-                        else
+                        if (currency == "EUR")
                         {
-                            if (currency == "USD")
-                            {
-                                mebleq = mebleq * 1.7;
-                                dict[CurrencyType.AZN] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "EUR")
-                            {
-                                mebleq = mebleq * 1.95;
-                                dict[CurrencyType.AZN] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "TL")
-                            {
-                                mebleq = mebleq * 0.12533;
-                                dict[CurrencyType.AZN] += mebleq;
-                                TotalSalesCount++;
-                            }
+                            mebleq = mebleq * 1.95;
+                            dict[CurrencyType.AZN] += mebleq;
+                            TotalSalesCount++;
+                        }
+                        if (currency == "TL")
+                        {
+                            mebleq = mebleq * 0.12533;
+                            dict[CurrencyType.AZN] += mebleq;
+                            TotalSalesCount++;
                         }
                     }
+
                 }
                 if (currency2 == "TL")
                 {
-                    if (!dict.ContainsKey(CurrencyType.TL))
+
+
+                    if (currency2 == currency)
                     {
-                        dict.Add(CurrencyType.TL, mebleq);
+                        dict[CurrencyType.TL] += mebleq;
                         TotalSalesCount++;
                     }
                     else
                     {
-
-                        if (currency2 == currency)
+                        if (currency == "USD")
                         {
+                            mebleq = mebleq * 13.57;
                             dict[CurrencyType.TL] += mebleq;
                             TotalSalesCount++;
                         }
-                        else
+                        if (currency == "EUR")
                         {
-                            if (currency == "USD")
-                            {
-                                mebleq = mebleq * 13.57;
-                                dict[CurrencyType.TL] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "EUR")
-                            {
-                                mebleq = mebleq * 15.51;
-                                dict[CurrencyType.TL] += mebleq;
-                                TotalSalesCount++;
-                            }
-                            if (currency == "AZN")
-                            {
-                                mebleq = mebleq * 7.98;
-                                dict[CurrencyType.TL] += mebleq;
-                                TotalSalesCount++;
-                            }
+                            mebleq = mebleq * 15.51;
+                            dict[CurrencyType.TL] += mebleq;
+                            TotalSalesCount++;
+                        }
+                        if (currency == "AZN")
+                        {
+                            mebleq = mebleq * 7.98;
+                            dict[CurrencyType.TL] += mebleq;
+                            TotalSalesCount++;
                         }
                     }
+
                 }
             }
 
