@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\bin\Debug\test.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\bin\Debug\test.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\bin\Debug\test.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\obj\Debug\test.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\obj\Debug\test.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\test\test\obj\Debug\test.pdb
