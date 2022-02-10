@@ -30,10 +30,10 @@ namespace Dictionary
             if (one == 1)
             {
                 int num = 0;
-                TimerCallback tm = new TimerCallback(Count();
-                Timer timer = new Timer(tm, num, 20000, 0);
+                TimerCallback tm = new TimerCallback(Elmar.Count);
+                Timer timer = new Timer(tm, num, 120000, 0);
 
-                RandomWord(strlist);
+                Elmar.RandomWord(strlist);
             }
 
 
@@ -43,74 +43,97 @@ namespace Dictionary
 
         }
 
-
-        public static void Count(object obj, )
+        static class Elmar
         {
-            Console.BackgroundColor = ConsoleColor.Blue;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Time is UP, lets calculate your results, be away from a keyboard. Dont Touch it");
-            RandomWord
+            public static int score = 0;
+            public static int countofexp = 0;
+            public static int rightans = 0;
+            public static List<string> list = new List<string>();
 
 
-        }
 
-
-        
-
-        public static void RandomWord(string[] sozler)
-        {
-            int countofexp = 0;
-            while (true)
+            public static void RandomWord(string[] sozler)
             {
 
-                int score = 0;
-                var idx = new Random().Next(sozler.Length);
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(sozler[idx]);
-                Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Please insert the word you think will be the next");
-                string input = Console.ReadLine();
 
-                if (input == sozler[idx + 1])
+                while (true)
                 {
-                    Console.ForegroundColor = ConsoleColor.Blue;
-                    Console.WriteLine("you got a 6 coins");
-                    score += 6;
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.White;
-                    Console.WriteLine("You were wrong, and you lost to get 6 coins try once more");
-                    string input2 = Console.ReadLine();
-                    if (input2 == sozler[idx + 1])
+                    var idx = new Random().Next(sozler.Length);
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine(sozler[idx]);
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Please insert the word you think will be the next");
+                    string input = Console.ReadLine();
+
+                    if (input == sozler[idx + 1])
                     {
                         Console.ForegroundColor = ConsoleColor.Blue;
-                        Console.WriteLine("You got a 4 coins");
-                        score += 4;
+                        Console.WriteLine("you got a 6 coins");
+                        score += 6;
+                        rightans++;
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.White;
-                        Console.WriteLine("You were wrong, and you lost to get 4 coins, try once more");
-                        string input3 = Console.ReadLine();
-                        if (input3 == sozler[idx + 1])
+                        Console.WriteLine("You were wrong, and you lost to get 6 coins try once more");
+                        string input2 = Console.ReadLine();
+                        if (input2 == sozler[idx + 1])
                         {
                             Console.ForegroundColor = ConsoleColor.Blue;
-                            Console.WriteLine("you got a 2 coins");
-                            score += 2;
+                            Console.WriteLine("You got a 4 coins");
+                            score += 4;
+                            rightans++;
+
                         }
                         else
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("That is enough let play another round");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("You were wrong, and you lost to get 4 coins, try once more");
+                            string input3 = Console.ReadLine();
+                            if (input3 == sozler[idx + 1])
+                            {
+                                Console.ForegroundColor = ConsoleColor.Blue;
+                                Console.WriteLine("you got a 2 coins");
+                                score += 2;
+                                rightans++;
+                            }
+                            else
+                            {
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                Console.WriteLine("That is enough let play another round");
+                                string hhh = sozler[idx] + " " + sozler[idx + 1];
+                                list.Add(hhh);
+                            }
                         }
                     }
+                    countofexp++;
                 }
-                countofexp++;
+
+
             }
+            public static void Count(object obj)
+            {
+                Console.BackgroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Time is UP, lets calculate your results, be away from a keyboard. Dont Touch it");
+
+                Console.WriteLine("YOU SCORE is: " + Elmar.score);
+                Console.WriteLine("The number of all questions " + Elmar.countofexp);
+                Console.WriteLine("The number of right answers: " + Elmar.rightans);
+                int res = Elmar.countofexp - Elmar.rightans;
+                Console.WriteLine("The number of wrong answers: " + res);
+                foreach (var x in list)
+                {
+                    Console.WriteLine("That is right answer: " + x);
+                }
 
 
+
+
+            }
         }
+
+
 
 
 
