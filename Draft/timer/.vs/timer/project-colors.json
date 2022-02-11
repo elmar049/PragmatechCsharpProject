@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "30dcbf2a-51ae-4447-ba5d-7493cdbdf4a7": {
+      "ProjectGuid": "30dcbf2a-51ae-4447-ba5d-7493cdbdf4a7",
+      "DisplayName": "timer",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

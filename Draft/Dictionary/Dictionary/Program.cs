@@ -31,7 +31,7 @@ namespace Dictionary
             {
                 int num = 0;
                 TimerCallback tm = new TimerCallback(Elmar.Count);
-                Timer timer = new Timer(tm, num, 120000, 0);
+                Timer timer = new Timer(tm, num, 10000, 0);
 
                 Elmar.RandomWord(strlist);
             }
