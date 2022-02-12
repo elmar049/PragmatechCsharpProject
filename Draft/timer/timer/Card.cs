@@ -9,8 +9,9 @@ namespace timer
     class VirtualCard
     {
         private long _cardnumber;
-        //public double cash;
-        //public int lifetime;
+        public double cash;
+        DateTime time;
+        List <VirtualCard> kaartxana=new List<VirtualCard>();
 
         public long cardnumber
         {
@@ -35,6 +36,12 @@ namespace timer
         }
 
 
+
+    }
+
+    static class RealCard
+    {
+        public static int Accountmoney;
 
     }
 }

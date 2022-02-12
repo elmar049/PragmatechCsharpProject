@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\bin\Debug\ayselstask.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\bin\Debug\ayselstask.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\bin\Debug\ayselstask.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\obj\Debug\ayselstask.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\obj\Debug\ayselstask.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\obj\Debug\ayselstask.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\obj\Debug\ayselstask.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\ayselstask\ayselstask\obj\Debug\ayselstask.pdb
