@@ -39,7 +39,7 @@ namespace timer
         {
             if (money > RealCard.Accountmoney)
             {
-                Console.WriteLine("You dont have enough money on your main acc, try again");
+                Console.WriteLine("You aaaaaaaaaaaaa dont have enough money on your main acc, try again");
                 money = Convert.ToInt32(Console.ReadLine());
 
             }
@@ -55,8 +55,7 @@ namespace timer
             if(kaartxana.Count < 5)
             {
                 kaartxana.Add(kartt);
-
-                
+              
             }
             else
             {
@@ -67,20 +66,32 @@ namespace timer
 
         public static void ShowAllCards()
         {
-            foreach (var jjj in kaartxana)
+            if (kaartxana.Count == 0)
             {
-                Console.WriteLine("here you have the list of your virtual cards " + jjj.cardnumber + " " + jjj.cash );
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine( "You did not creat any cards yet" );
             }
+            else
+            {
+                foreach (var jjj in kaartxana)
+                {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Your virtual cards " + jjj.cardnumber + " with " + jjj.cash + " azn and it will be allow to use for " + jjj.time);
+                }
+            }
+            
             
         }
         public static void RemoveCardFromList (/*VirtualCard kartt*/)
         {
             if (kaartxana.Count == 0)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("You have not created aa virtual card, in order to delete it");
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("type a card code you wand to delete");
                 long input=Convert.ToInt64(Console.ReadLine());
                 for(int i=0; i<kaartxana.Count; i++)
@@ -89,6 +100,8 @@ namespace timer
                     {
                         RealCard.Accountmoney=RealCard.Accountmoney + kaartxana[i].cash;
                         kaartxana.RemoveAt(i);
+                        Console.ForegroundColor=ConsoleColor.Yellow;
+                        Console.WriteLine("Now money on your main card increased and became: " + RealCard.Accountmoney);
 
                     }
                 }
