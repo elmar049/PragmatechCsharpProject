@@ -50,11 +50,13 @@ namespace timer
             DateTime time2=DateTime.Now;
             time = time2.AddDays(restdays);
         }
-        public void AddCardtoList(VirtualCard kartt)
+        public static void AddCardtoList(VirtualCard kartt)
         {
             if(kaartxana.Count < 5)
             {
                 kaartxana.Add(kartt);
+
+                
             }
             else
             {
@@ -62,7 +64,16 @@ namespace timer
             }
             
         }
-        public void RemoveCardFromList (VirtualCard kartt)
+
+        public static void ShowAllCards()
+        {
+            foreach (var jjj in kaartxana)
+            {
+                Console.WriteLine("here you have the list of your virtual cards " + jjj.cardnumber + " " + jjj.cash );
+            }
+            
+        }
+        public static void RemoveCardFromList (/*VirtualCard kartt*/)
         {
             if (kaartxana.Count == 0)
             {
