@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\bin\Debug\StaticMethods.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\bin\Debug\StaticMethods.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\bin\Debug\StaticMethods.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\obj\Debug\StaticMethods.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\obj\Debug\StaticMethods.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\obj\Debug\StaticMethods.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\obj\Debug\StaticMethods.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\StaticMethods\StaticMethods\obj\Debug\StaticMethods.pdb
