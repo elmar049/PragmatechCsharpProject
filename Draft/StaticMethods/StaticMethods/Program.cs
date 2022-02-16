@@ -11,34 +11,27 @@ namespace StaticMethods
     {
         static void Main(string[] args)
         {
-            MyClass obj=new MyClass();
-            MyClass.a = 8;  //odin raz izmeni i vse on vezde 8
 
-            Console.WriteLine(MyClass.a);
-            MyClass.method2();
-
-            obj.Method1();
+            //MyClass2 obj1 = new MyClass2();
+            MyClass3 myClass3 = new MyClass3(8);
+            
 
 
 
-
-
-            //MyClass.method2();
 
         }
     }
     public class MyClass
     {
-        public static int a=5;
+        public static int a = 5;
         public int b;
 
 
         public static void method2()
         {
             Console.WriteLine("static method");
-            
+
             Console.WriteLine(a);
-           
 
         }
 
@@ -46,11 +39,48 @@ namespace StaticMethods
         {
             Console.WriteLine("Non-Static method");
             Console.WriteLine(a);
-           
 
-            
         }
 
-        
+
     }
+    //COUNTER
+    public class MyClass2
+    {
+        private static int _counter;
+
+        public static int Counter
+        {
+            get { return _counter; }
+           private set { _counter = value; }  //zdes mi piwem Private, ctobi 19 strochka bila nevozmojna, tak kak ona izmenaet smisl counta
+        }
+
+        public MyClass2()
+        {
+            Counter++;
+            Console.WriteLine("salam");
+        }
+    }
+    //STATIC CONSTTUCTION
+    public class MyClass3
+    {
+
+        public MyClass3()
+        {
+            Console.WriteLine("salam");
+        }
+        public MyClass3(int a)
+        {
+            Console.WriteLine(a+5);
+        }
+        static MyClass3()
+        {
+
+        }
+
+
+    }
+
+    
+
 }
