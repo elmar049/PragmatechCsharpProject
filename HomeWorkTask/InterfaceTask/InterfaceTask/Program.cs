@@ -17,7 +17,7 @@ namespace InterfaceTask
             double del = calculate.delenie(100, 20, 2);
 
 
-            Console.WriteLine(summa+ " ; "+ vicitanie+ " ; " + umj + " ; " + del);
+            Console.WriteLine(summa + " ; " + vicitanie + " ; " + umj + " ; " + del);
         }
     }
 
@@ -42,12 +42,15 @@ namespace InterfaceTask
     {
         public double delenie(params double[] numbers)
         {
-            double res = 0;
-            for (int i = 0; i < numbers.Length; i++)
+            double res = 1;
+
+            for (int k = 0; k < numbers.Length; k++)
             {
-                res = res / numbers[i];
+                res = res / numbers[k];
             }
+
             return res;
+
         }
 
         public double minus(params double[] numbers)
@@ -62,10 +65,10 @@ namespace InterfaceTask
 
         public double sum(params double[] numbers)
         {
-            double res=0.0;
+            double res = 0.0;
             for (int i = 0; i < numbers.Length; i++)
             {
-                res=res+numbers[i];
+                res = res + numbers[i];
             }
             return res;
         }
