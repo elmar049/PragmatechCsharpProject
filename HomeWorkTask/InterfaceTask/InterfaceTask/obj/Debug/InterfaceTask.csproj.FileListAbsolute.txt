@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\bin\Debug\InterfaceTask.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\bin\Debug\InterfaceTask.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\bin\Debug\InterfaceTask.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\obj\Debug\InterfaceTask.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\obj\Debug\InterfaceTask.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\obj\Debug\InterfaceTask.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\obj\Debug\InterfaceTask.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\InterfaceTask\InterfaceTask\obj\Debug\InterfaceTask.pdb
