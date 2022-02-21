@@ -40,7 +40,7 @@ namespace InterfaceTask
 
     public class Calculate : Isum, IMultiply, IDivide, IDifference
     {
-        public double delenie(params double[] numbers)
+        public double delenie(params double[] numbers) // i want to add that this part of code a bit unuseful
         {
             double res = 1;
 
