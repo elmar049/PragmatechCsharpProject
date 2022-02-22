@@ -10,20 +10,37 @@ namespace draft
     {
         static void Main(string[] args)
         {
+            Player player = new Player();
+            player.showall(new item1());
+
+            Ishowinfo info = new item1();
+            info.Data();
         }
     }
 
-    interface idrescode
+    interface Ishowinfo
     {
-        void Data(string salam );
+        void Data();
 
     }
 
-    public class uuu : idrescode
+    class item1 : Ishowinfo
     {
-        public void Data(string salam)
+        public void Data()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("data iz pervooq classa");
         }
     }
+
+   
+
+     class Player
+    {
+        public void showall(Ishowinfo xxx)
+        {
+            xxx.Data();
+        }
+    }
+
+
 }

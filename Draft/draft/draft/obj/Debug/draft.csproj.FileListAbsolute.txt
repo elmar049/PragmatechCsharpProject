@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\obj\Debug\draft.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\obj\Debug\draft.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\obj\Debug\draft.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\bin\Debug\draft.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\bin\Debug\draft.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\bin\Debug\draft.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\obj\Debug\draft.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\draft\draft\obj\Debug\draft.pdb
