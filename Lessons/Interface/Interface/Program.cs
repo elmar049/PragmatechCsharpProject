@@ -36,7 +36,7 @@ namespace Interface
                     break;
 
                 case 3:
-                    Triangle x  = new Triangle();
+                    Triangle x = new Triangle();
                     Console.WriteLine("Please provide the width of triangle's side:");
                     x.oneside = Convert.ToInt32(Console.ReadLine());
                     x.CalculatePerimeter();
@@ -44,9 +44,9 @@ namespace Interface
                     break;
 
                 case 4:
-                    circle circle= new circle();
+                    circle circle = new circle();
                     Console.WriteLine("Please provide the R-adius of circle: ");
-                    circle.rad=Convert.ToInt32(Console.ReadLine());
+                    circle.rad = Convert.ToInt32(Console.ReadLine());
                     circle.CalculatePerimeter();
                     circle.CalculateArea();
                     break;
@@ -54,6 +54,15 @@ namespace Interface
 
 
             }
+
+
+
+
+            //int []a=new int[2];
+            //a[0] = 5;
+            //int[] b = a;
+            //b[0] = 6;
+            //Console.WriteLine(a[0]);
 
 
 

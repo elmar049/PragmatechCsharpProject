@@ -19,12 +19,60 @@ namespace WindowsFormsApp1
 
         private void btnclickthis_Click(object sender, EventArgs e)
         {
-            lblHelloWorld.Text = "Hello World!";
+            int a = Convert.ToInt32(textBox1.Text);
+            int b = Convert.ToInt32(textBox2.Text);
+            int c = a + b;
+            textBox3.Text = c.ToString();
+
         }
 
         private void lblHelloWorld_Click(object sender, EventArgs e)
         {
-            d
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(textBox1.Text);
+            int b = Convert.ToInt32(textBox2.Text);
+            int c = a - b;
+            textBox6.Text = c.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(textBox1.Text);
+            int b = Convert.ToInt32(textBox2.Text);
+            int c = a * b;
+            textBox5.Text = c.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(textBox1.Text);
+            int b = Convert.ToInt32(textBox2.Text);
+            int c = a / b;
+            textBox4.Text = c.ToString();
         }
     }
 }
