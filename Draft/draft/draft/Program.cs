@@ -10,11 +10,25 @@ namespace draft
     {
         static void Main(string[] args)
         {
-            Player player = new Player();
-            player.showall(new item1());
+            //Player player = new Player();
+            //player.showall(new item1());
 
-            Ishowinfo info = new item1();
-            info.Data();
+            //Ishowinfo info = new item1();
+            //info.Data();
+
+            Random random = new Random();
+
+
+
+            for (int i = 0; i < 10; i++)
+            {
+                int x = random.Next(999);
+                Console.WriteLine(x);
+            }
+                ;
+
+
+
         }
     }
 
@@ -32,9 +46,9 @@ namespace draft
         }
     }
 
-   
 
-     class Player
+
+    class Player
     {
         public void showall(Ishowinfo xxx)
         {

@@ -53,10 +53,64 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormCustomers.Designer.cs">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormNotification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormNotification.Designer.cs">
+      <DependentUpon>FormNotification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormOrders.Designer.cs">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormReports.Designer.cs">
+      <DependentUpon>FormReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\Formsetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Formsetting.Designer.cs">
+      <DependentUpon>Formsetting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormCustomers.resx">
+      <DependentUpon>FormCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormNotification.resx">
+      <DependentUpon>FormNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormOrders.resx">
+      <DependentUpon>FormOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormReports.resx">
+      <DependentUpon>FormReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Formsetting.resx">
+      <DependentUpon>Formsetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-setting-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

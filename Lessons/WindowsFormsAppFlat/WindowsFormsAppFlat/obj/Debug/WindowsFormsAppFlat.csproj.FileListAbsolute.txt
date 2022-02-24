@@ -1,0 +1,17 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\bin\Debug\WindowsFormsAppFlat.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\bin\Debug\WindowsFormsAppFlat.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\bin\Debug\WindowsFormsAppFlat.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.Form1.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.Properties.Resources.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.csproj.GenerateResource.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.FormCustomers.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.FormProduct.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.FormReports.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.Formsetting.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.FormNotification.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\WindowsFormsAppFlat\WindowsFormsAppFlat\obj\Debug\WindowsFormsAppFlat.forms.FormOrders.resources
