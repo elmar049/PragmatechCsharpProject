@@ -16,16 +16,13 @@ namespace draft
             //Ishowinfo info = new item1();
             //info.Data();
 
-            Random random = new Random();
 
+            Console.WriteLine("salam abiler");
 
-
-            for (int i = 0; i < 10; i++)
-            {
-                int x = random.Next(999);
-                Console.WriteLine(x);
-            }
-                ;
+            int a = 8;
+            int b = 10;
+            int c = a+b;
+            Console.WriteLine(c);
 
 
 
