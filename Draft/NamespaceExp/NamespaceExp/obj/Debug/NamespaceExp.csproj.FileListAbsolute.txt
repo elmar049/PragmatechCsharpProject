@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\obj\Debug\NamespaceExp.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\obj\Debug\NamespaceExp.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\obj\Debug\NamespaceExp.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\bin\Debug\NamespaceExp.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\bin\Debug\NamespaceExp.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\bin\Debug\NamespaceExp.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\obj\Debug\NamespaceExp.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\NamespaceExp\NamespaceExp\obj\Debug\NamespaceExp.pdb
