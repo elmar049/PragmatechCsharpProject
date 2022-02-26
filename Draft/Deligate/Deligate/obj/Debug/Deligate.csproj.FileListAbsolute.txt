@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\bin\Debug\Deligate.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\bin\Debug\Deligate.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\bin\Debug\Deligate.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\obj\Debug\Deligate.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\obj\Debug\Deligate.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\obj\Debug\Deligate.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\obj\Debug\Deligate.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Deligate\Deligate\obj\Debug\Deligate.pdb

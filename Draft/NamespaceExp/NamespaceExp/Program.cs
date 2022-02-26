@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//mdnde exe file niye aacilmirki
 namespace NamespaceExp
 {
     public class Off
     {
         public  int x;   // it should be static or not? why here is an mistake...
+
     }
     internal class Program
     {
