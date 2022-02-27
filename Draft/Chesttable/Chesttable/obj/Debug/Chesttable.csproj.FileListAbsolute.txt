@@ -1,0 +1,11 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\bin\Debug\Chesttable.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\bin\Debug\Chesttable.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\bin\Debug\Chesttable.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.Form1.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.Properties.Resources.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.csproj.GenerateResource.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Chesttable\Chesttable\obj\Debug\Chesttable.pdb
