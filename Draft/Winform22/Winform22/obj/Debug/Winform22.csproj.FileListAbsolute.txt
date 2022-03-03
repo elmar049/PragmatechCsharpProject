@@ -3,9 +3,12 @@ C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\bin\Deb
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\bin\Debug\Winform22.pdb
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.csproj.AssemblyReference.cache
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.csproj.SuggestedBindingRedirects.cache
-C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.Form1.resources
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.Properties.Resources.resources
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.csproj.GenerateResource.cache
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.csproj.CoreCompileInputs.cache
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.exe
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.ClientPageForm.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.FirstPageForm.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.LoginForm.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.RegistrationForm.resources

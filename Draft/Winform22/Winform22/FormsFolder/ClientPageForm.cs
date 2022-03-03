@@ -8,21 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Winform22
+namespace Winform22.FormsFolder
 {
-    public partial class Form1 : Form
+    public partial class ClientPageForm : Form
     {
-        public Form1()
+        public ClientPageForm()
         {
             InitializeComponent();
-            
-            
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-             
+
         }
     }
 }
