@@ -12,5 +12,7 @@ namespace Winform22.User
         public string userSurname { get; set; }
         public int userID { get; set; }
         public string userDayofreg { get; set; }
+
+        public string usergenerpass { get; set; }
     }
 }

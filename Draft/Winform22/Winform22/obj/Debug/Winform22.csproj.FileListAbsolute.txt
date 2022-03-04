@@ -12,3 +12,5 @@ C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Deb
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.FirstPageForm.resources
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.LoginForm.resources
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.RegistrationForm.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.PassLogModifier.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\Winform22\Winform22\obj\Debug\Winform22.FormsFolder.AdminForm.resources

@@ -12,19 +12,38 @@ namespace Winform22.FormsFolder
 {
     public partial class ClientPageForm : Form
     {
+        //public static User.UserClass SelectedUser = new User.UserClass();
         public ClientPageForm()
         {
             InitializeComponent();
+            
+            
+           
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void deletebtn_Click(object sender, EventArgs e)
         {
+            for (int v = 0; v < Database.DBmodel.clientList.Count; v++)
+            {
+                if(Database.DBmodel.clientList[v].userID== Database.DBmodel.SelectedUser.userID)
+                {
+                    Database.DBmodel.clientList.RemoveAt(v);
+                }
+            }
+
+            var firstpage = new FirstPageForm();
+            firstpage.ShowDialog();
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void mdfrBtn_Click(object sender, EventArgs e)
         {
+            var xxx=new PassLogModifier();
+            xxx.Show();
 
+            
+
+          
         }
     }
 }

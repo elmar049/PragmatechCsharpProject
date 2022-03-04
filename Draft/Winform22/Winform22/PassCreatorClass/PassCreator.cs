@@ -4,32 +4,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-
-namespace Random_password
+namespace Winform22.PassCreatorClass
 {
-    class Program
+    internal class PassCreator
     {
         static string alphaCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         static string alphaLow = "abcdefghijklmnopqrstuvwxyz";
         static string numerics = "1234567890";
-      
+
         string allChars = alphaCaps + alphaLow + numerics;
         Random r = new Random();
 
-        public   string GenerateRandomStrongPassword(int length)
+        public string GenerateRandomStrongPassword(int length)
         {
             String generatedPassword = "";
             if (length < 4)
                 throw new Exception("Number of characters should be greater than 4.");
-            int lowerpass, upperpass, numpass, specialchar;
+            int lowerpass, upperpass, numpass;
             string posarray = "0123456789";
             if (length < posarray.Length)
                 posarray = posarray.Substring(0, length);
             lowerpass = getRandomPosition(ref posarray);
             upperpass = getRandomPosition(ref posarray);
             numpass = getRandomPosition(ref posarray);
-           
+
 
 
             for (int i = 0; i < length; i++)
@@ -40,7 +38,7 @@ namespace Random_password
                     generatedPassword += getRandomChar(alphaLow);
                 else if (i == numpass)
                     generatedPassword += getRandomChar(numerics);
-                
+
                 else
                     generatedPassword += getRandomChar(allChars);
             }
@@ -60,15 +58,6 @@ namespace Random_password
             posArray = posArray.Replace(randomChar, "");
             return pos;
         }
-
-        //Calling the method 
-        static void Main(string[] args)    //Main Method
-        {
-            Program p = new Program();
-            Random rand=new Random();
-            int x=rand.Next(8,12);
-            string rs = p.GenerateRandomStrongPassword(x);
-            Console.WriteLine(rs);
-        }
     }
 }
+

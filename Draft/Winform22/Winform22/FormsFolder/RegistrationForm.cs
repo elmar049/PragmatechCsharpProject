@@ -35,8 +35,10 @@ namespace Winform22.FormsFolder
             newclient.userSurname = textBoxEmail.Text;
             newclient.userID = randomid.Next(1, 100);
             newclient.userDayofreg = dateTime.ToString();
-            Database.DBmodel.clientList.Add(newclient);
 
+            string pass = "12345"; /*Passcreator();*/
+            newclient.usergenerpass = pass;
+            Database.DBmodel.clientList.Add(newclient);
             //Database.DBmodel.clientList.Add(new User.UserClass()
             //{
             //    userName = textBoxName.Text,
@@ -48,18 +50,23 @@ namespace Winform22.FormsFolder
 
 
 
-            MessageBox.Show("You done your registration");
+            MessageBox.Show($"You done your registration, your pass is {pass}. PLease memorise it" );
 
         }
+         private string  Passcreator()
+        {
+            PassCreatorClass.PassCreator ppp = new PassCreatorClass.PassCreator();
+            Random rand = new Random();
+            int x = rand.Next(8, 12);
+            string rs = ppp.GenerateRandomStrongPassword(x);
+            return rs;
+        }
+      
 
-        //private void PasswordCreator()
-        //{
-        //boxes cannot be an empty
 
 
 
 
-
-        //}
+       
     }
 }

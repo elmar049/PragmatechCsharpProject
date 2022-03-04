@@ -9,5 +9,7 @@ namespace Winform22.Database
     internal class DBmodel
     {
         public static List<User.UserClass> clientList = new List<User.UserClass>();
+        public static User.UserClass SelectedUser = null;
+        public static User.UserClass DeletededUserClass = null;
     }
 }
