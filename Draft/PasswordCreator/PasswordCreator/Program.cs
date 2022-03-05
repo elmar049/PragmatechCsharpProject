@@ -8,67 +8,54 @@ using System.Threading.Tasks;
 
 namespace Random_password
 {
+    delegate int Mydelig(int x);
     class Program
+
     {
-        static string alphaCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        static string alphaLow = "abcdefghijklmnopqrstuvwxyz";
-        static string numerics = "1234567890";
-      
-        string allChars = alphaCaps + alphaLow + numerics;
-        Random r = new Random();
-
-        public   string GenerateRandomStrongPassword(int length)
+        public static void Foo(int y)
         {
-            String generatedPassword = "";
-            if (length < 4)
-                throw new Exception("Number of characters should be greater than 4.");
-            int lowerpass, upperpass, numpass, specialchar;
-            string posarray = "0123456789";
-            if (length < posarray.Length)
-                posarray = posarray.Substring(0, length);
-            lowerpass = getRandomPosition(ref posarray);
-            upperpass = getRandomPosition(ref posarray);
-            numpass = getRandomPosition(ref posarray);
-           
-
-
-            for (int i = 0; i < length; i++)
-            {
-                if (i == lowerpass)
-                    generatedPassword += getRandomChar(alphaCaps);
-                else if (i == upperpass)
-                    generatedPassword += getRandomChar(alphaLow);
-                else if (i == numpass)
-                    generatedPassword += getRandomChar(numerics);
-                
-                else
-                    generatedPassword += getRandomChar(allChars);
-            }
-            return generatedPassword;
+            Console.WriteLine(y + 10);
         }
 
-        private string getRandomChar(string fullString)
+        public static void Foo1(int h)
         {
-            return fullString.ToCharArray()[(int)Math.Floor(r.NextDouble() * fullString.Length)].ToString();
+            Console.WriteLine(h - 10);
         }
 
-        private int getRandomPosition(ref string posArray)
+        void Foo2(int y, int y2)
         {
-            int pos;
-            string randomChar = posArray.ToCharArray()[(int)Math.Floor(r.NextDouble() * posArray.Length)].ToString();
-            pos = int.Parse(randomChar);
-            posArray = posArray.Replace(randomChar, "");
-            return pos;
+            Console.WriteLine("eto foo 2");
         }
 
-        //Calling the method 
-        static void Main(string[] args)    //Main Method
+        void Foo3()
         {
-            Program p = new Program();
-            Random rand=new Random();
-            int x=rand.Next(8,12);
-            string rs = p.GenerateRandomStrongPassword(x);
-            Console.WriteLine(rs);
+            Console.WriteLine("eto foo bez parametrs");
         }
+        static void Main(string[] args)
+        {
+            //var xxx = new Mydelig(Foo);
+            //xxx += Foo1;
+            //xxx(8);
+
+
+
+            Mydelig xxkx = x => x * 6;
+
+            Console.WriteLine(xxkx(5));
+
+
+
+
+
+        }
+
+
+
+
+
+
+
     }
+
+
 }
