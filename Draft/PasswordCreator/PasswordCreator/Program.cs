@@ -33,10 +33,12 @@ namespace Random_password
         }
         static void Main(string[] args)
         {
-            //var xxx = new Mydelig(Foo);
-            //xxx += Foo1;
-            //xxx(8);
+            var xxx = new Mydelig(Foo);
+            xxx += Foo1;
+            xxx(8);
 
+
+            //et pervaya cast
 
 
             Mydelig xxkx = x => x * 6;
