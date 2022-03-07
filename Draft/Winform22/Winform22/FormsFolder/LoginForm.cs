@@ -19,12 +19,14 @@ namespace Winform22.FormsFolder
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             var firstpage = new FirstPageForm();
             firstpage.Show();
 
         }
         private void buttondell_Click(object sender, EventArgs e)
         {
+            this.Hide();
             for (int b = 0; b < Database.DBmodel.clientList.Count; b++)
             {
                 if (Database.DBmodel.clientList[b].userName == Database.DBmodel.DeletededUserClass.userName)
@@ -32,6 +34,7 @@ namespace Winform22.FormsFolder
                     Database.DBmodel.clientList.RemoveAt(b);
                 }
             }
+            
                 var fff=new AdminForm();
             fff.Show();
 
@@ -90,12 +93,20 @@ namespace Winform22.FormsFolder
 
                     var lbl = new Label();
                     var lbl2 = new Label();
-                    lbl.Top = 50;
-                    lbl.Left = 150;
-                    lbl2.Top = 100;
-                    lbl.BackColor = Color.Red;
-                    lbl.Text = Database.DBmodel.clientList[i].userName;
-                    lbl2.Text = Database.DBmodel.clientList[i].usergenerpass;
+                    lbl.Top = 90;
+                    lbl.Left = 15;
+                    lbl2.Top = 140;
+                    lbl2.Left = 15;
+                    lbl.Size = new System.Drawing.Size(200, 20);
+                    lbl2.Size = new System.Drawing.Size(200, 20);
+                    lbl.BackColor= System.Drawing.Color.Transparent;
+                    lbl2.BackColor = System.Drawing.Color.Transparent;
+                    lbl.ForeColor= System.Drawing.Color.White;
+                    lbl2.ForeColor = System.Drawing.Color.White;
+                    
+
+                    lbl.Text = $"Your log is: {Database.DBmodel.clientList[i].userName}";
+                    lbl2.Text = $"Your pass is: {Database.DBmodel.clientList[i].usergenerpass}";
 
                     cpf.Controls.Add(lbl);
                     cpf.Controls.Add(lbl2);

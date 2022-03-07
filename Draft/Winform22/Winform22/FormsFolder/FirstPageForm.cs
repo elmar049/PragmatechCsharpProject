@@ -19,6 +19,7 @@ namespace Winform22.FormsFolder
 
         private void LogBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             var loginobject = new LoginForm();
             loginobject.Show();
 
@@ -26,6 +27,7 @@ namespace Winform22.FormsFolder
 
         private void regbtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             var regobject = new RegistrationForm();
             regobject.Show();
 

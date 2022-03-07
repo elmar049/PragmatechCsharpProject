@@ -9,7 +9,9 @@ namespace Winform22.User
     internal class UserClass
     {
         public  string userName { get; set; }
-        public string userSurname { get; set; }
+
+        public string userSurName { get; set; }
+        public string userEmailname { get; set; }
         public int userID { get; set; }
         public string userDayofreg { get; set; }
 

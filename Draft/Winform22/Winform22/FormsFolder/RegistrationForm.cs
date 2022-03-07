@@ -19,6 +19,7 @@ namespace Winform22.FormsFolder
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             var firstpage = new FirstPageForm();
             firstpage.ShowDialog();
 
@@ -26,34 +27,44 @@ namespace Winform22.FormsFolder
 
         private void regbutoon_Click(object sender, EventArgs e)
         {
-            Random randomid = new Random();
-            DateTime dateTime = DateTime.Now;
+            this.Hide();
+            if (textBoxName.Text != "" && textBoxEmail.Text != "" &&textBoxSurname.Text!="")
+            {
 
-            var newclient = new User.UserClass();
+                Random randomid = new Random();
+                DateTime dateTime = DateTime.Now;
 
-            newclient.userName = textBoxName.Text;
-            newclient.userSurname = textBoxEmail.Text;
-            newclient.userID = randomid.Next(1, 100);
-            newclient.userDayofreg = dateTime.ToString();
+                var newclient = new User.UserClass();
 
-            string pass = "12345"; /*Passcreator();*/
-            newclient.usergenerpass = pass;
-            Database.DBmodel.clientList.Add(newclient);
-            //Database.DBmodel.clientList.Add(new User.UserClass()
-            //{
-            //    userName = textBoxName.Text,
-            //    userSurname = textBoxEmail.Text,
-            //    userID = randomid.Next(1, 100),
-            //    userDayofreg = dateTime.ToString()
-            //});
+                newclient.userName = textBoxName.Text;
+                newclient.userSurName = textBoxSurname.Text;
+                newclient.userEmailname = textBoxEmail.Text;
+                newclient.userID = randomid.Next(1, 100);
+                newclient.userDayofreg = dateTime.ToString();
+
+                string pass = "12345"; /*Passcreator();*/
+                newclient.usergenerpass = pass;
+                Database.DBmodel.clientList.Add(newclient);
+
+                
+                
+
+                MessageBox.Show($"You done! Your pass is {pass}   PLease memorise it");
+
+            }
+            else
+            {
+                MessageBox.Show("Fiels cannot be empty");
+            }
 
 
 
 
-            MessageBox.Show($"You done your registration, your pass is {pass}. PLease memorise it" );
+
+
 
         }
-         private string  Passcreator()
+        private string Passcreator()
         {
             PassCreatorClass.PassCreator ppp = new PassCreatorClass.PassCreator();
             Random rand = new Random();
@@ -61,12 +72,12 @@ namespace Winform22.FormsFolder
             string rs = ppp.GenerateRandomStrongPassword(x);
             return rs;
         }
-      
 
 
 
 
 
-       
+
+
     }
 }
