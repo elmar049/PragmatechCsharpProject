@@ -23,7 +23,7 @@ namespace Winform22.FormsFolder
 
         private void deletebtn_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             for (int v = 0; v < Database.DBmodel.clientList.Count; v++)
             {
                 if(Database.DBmodel.clientList[v].userID== Database.DBmodel.SelectedUser.userID)
@@ -39,7 +39,7 @@ namespace Winform22.FormsFolder
 
         private void mdfrBtn_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             var xxx=new PassLogModifier();
             xxx.Show();
 

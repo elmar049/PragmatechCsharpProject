@@ -27,7 +27,7 @@ namespace Winform22.FormsFolder
 
         private void regbutoon_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             if (textBoxName.Text != "" && textBoxEmail.Text != "" &&textBoxSurname.Text!="")
             {
 

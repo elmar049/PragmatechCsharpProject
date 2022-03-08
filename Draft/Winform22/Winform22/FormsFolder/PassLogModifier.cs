@@ -19,7 +19,7 @@ namespace Winform22.FormsFolder
 
         private void savebtnmodify_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             Database.DBmodel.SelectedUser.userName = textBoxname.Text;
             Database.DBmodel.SelectedUser.usergenerpass = textBoxpass.Text;
 
