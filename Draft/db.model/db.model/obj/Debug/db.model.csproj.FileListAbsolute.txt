@@ -1,0 +1,14 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\bin\Debug\Database1.mdf
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\bin\Debug\Database1_log.ldf
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\bin\Debug\db.model.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\bin\Debug\db.model.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\bin\Debug\db.model.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.Form1.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.Form2.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.csproj.GenerateResource.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Draft\db.model\db.model\obj\Debug\db.model.Form3.resources
