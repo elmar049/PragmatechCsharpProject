@@ -1,0 +1,14 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql_db.Form1.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql_db.Properties.Resources.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.csproj.GenerateResource.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\bin\Debug\sql-db.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\bin\Debug\sql-db.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\bin\Debug\sql-db.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\bin\Debug\System.Data.SqlClient.dll
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\bin\Debug\System.Data.SqlClient.xml
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.csproj.CopyComplete
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\sql-db\sql-db\obj\Debug\sql-db.pdb
