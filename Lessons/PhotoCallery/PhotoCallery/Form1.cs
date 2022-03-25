@@ -16,5 +16,17 @@ namespace PhotoCallery
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            string path = openFileDialog1.FileName;
+            pictureBox1.Image = Image.FromFile(path);  
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

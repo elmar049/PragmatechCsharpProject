@@ -1,0 +1,11 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\PhotoCallery.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\PhotoCallery.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\PhotoCallery.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.Form1.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.Properties.Resources.resources
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.GenerateResource.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.pdb
