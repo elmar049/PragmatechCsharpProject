@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\bin\Debug\filemanaging.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\bin\Debug\filemanaging.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\bin\Debug\filemanaging.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\obj\Debug\filemanaging.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\obj\Debug\filemanaging.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\obj\Debug\filemanaging.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\obj\Debug\filemanaging.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\filemanaging\filemanaging\obj\Debug\filemanaging.pdb
