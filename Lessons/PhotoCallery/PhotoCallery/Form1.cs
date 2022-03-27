@@ -15,13 +15,36 @@ namespace PhotoCallery
         public Form1()
         {
             InitializeComponent();
+
+            int left = 30;
+
+            List<string> clickes = new List<string>();
+            clickes.Add("Tebiyet");
+            clickes.Add("Auto");
+            clickes.Add("Human");
+
+            List<string> photos = new List<string>() {
+
+            };
+
+            foreach (string click in clickes)
+            {
+                Button label = new Button();
+                label.Text = click;
+                label.Top = 30;
+                label.Left = left;
+                left += label.Width;
+                this.Controls.Add(label);
+            }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            string path = openFileDialog1.FileName;
-            pictureBox1.Image = Image.FromFile(path);  
+            //openFileDialog1.ShowDialog();
+            //string path = openFileDialog1.FileName;
+            //pictureBox1.Image = Image.FromFile(path);  
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

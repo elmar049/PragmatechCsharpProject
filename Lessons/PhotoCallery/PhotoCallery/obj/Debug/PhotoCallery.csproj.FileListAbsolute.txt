@@ -9,3 +9,8 @@ C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.CoreCompileInputs.cache
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.exe
 C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\EntityFramework.dll
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\EntityFramework.xml
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\PhotoCallery\PhotoCallery\obj\Debug\PhotoCallery.csproj.CopyComplete
