@@ -69,7 +69,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Gallery";
             this.ResumeLayout(false);
             this.PerformLayout();
 

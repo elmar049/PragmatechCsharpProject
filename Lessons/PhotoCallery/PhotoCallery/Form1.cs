@@ -25,8 +25,12 @@ namespace PhotoCallery
 
             List<string> photos = new List<string>() {
 
-            };
+                "demo/02.JPG",
+                "demo/1.jpg",
+                "demo/03.jpg",
 
+            };
+            jj
             foreach (string click in clickes)
             {
                 Button label = new Button();
@@ -35,6 +39,18 @@ namespace PhotoCallery
                 label.Left = left;
                 left += label.Width;
                 this.Controls.Add(label);
+            }
+
+            foreach (string photo in photos)
+            {
+                PictureBox pictureBox = new PictureBox();
+                pictureBox.Image = Image.FromFile(@"C:\Users\elmar\Desktop\demo\1.jpg");
+                pictureBox.Top = 80;
+                pictureBox.Height = 300;
+                pictureBox.Width = 300;
+                pictureBox.Left = left;
+                left += 150;
+                this.Controls.Add(pictureBox);
             }
 
 
