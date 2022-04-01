@@ -87,7 +87,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(0, 157);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 65535);
+            this.panel1.Size = new System.Drawing.Size(2000, 65535);
             this.panel1.TabIndex = 8;
             // 
             // fileToolStripMenuItem
