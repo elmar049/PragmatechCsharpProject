@@ -40,6 +40,9 @@
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.showTheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.show5LastUploadedPhotosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showPhotosWithjpgExtentionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,9 +109,13 @@
             // 
             // categoriesToolStripMenuItem
             // 
+            this.categoriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showTheToolStripMenuItem,
+            this.show5LastUploadedPhotosToolStripMenuItem,
+            this.showPhotosWithjpgExtentionToolStripMenuItem});
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
-            this.categoriesToolStripMenuItem.Text = "Categories";
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.categoriesToolStripMenuItem.Text = "Operations";
             // 
             // deleteToolStripMenuItem
             // 
@@ -137,6 +144,25 @@
             this.menuStrip1.Size = new System.Drawing.Size(1062, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // showTheToolStripMenuItem
+            // 
+            this.showTheToolStripMenuItem.Name = "showTheToolStripMenuItem";
+            this.showTheToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.showTheToolStripMenuItem.Text = "Show 5 the higest size photos ";
+            this.showTheToolStripMenuItem.Click += new System.EventHandler(this.showTheToolStripMenuItem_Click);
+            // 
+            // show5LastUploadedPhotosToolStripMenuItem
+            // 
+            this.show5LastUploadedPhotosToolStripMenuItem.Name = "show5LastUploadedPhotosToolStripMenuItem";
+            this.show5LastUploadedPhotosToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.show5LastUploadedPhotosToolStripMenuItem.Text = "Show 5 last uploaded photos";
+            // 
+            // showPhotosWithjpgExtentionToolStripMenuItem
+            // 
+            this.showPhotosWithjpgExtentionToolStripMenuItem.Name = "showPhotosWithjpgExtentionToolStripMenuItem";
+            this.showPhotosWithjpgExtentionToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.showPhotosWithjpgExtentionToolStripMenuItem.Text = "Show photos with .jpg extention";
             // 
             // Form1
             // 
@@ -174,6 +200,9 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showTheToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem show5LastUploadedPhotosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showPhotosWithjpgExtentionToolStripMenuItem;
     }
 }
 

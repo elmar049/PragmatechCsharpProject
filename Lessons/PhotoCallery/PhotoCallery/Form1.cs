@@ -35,7 +35,7 @@ namespace PhotoCallery
             comboBox.DataSource = comboboxlist;
 
         }
-        public void InsertingPhotoToPanel(string fullyname)
+        public void InsertingPhotoToPanel(string fullyname, string pcbName)
         {
             var pcb = new PictureBox();
             pcb.Image = Image.FromFile(fullyname);
@@ -46,7 +46,9 @@ namespace PhotoCallery
             pcb.Left = left;
             left += pcb.Width + 20;
             panel1.Controls.Add(pcb);
+            pcb.Name = pcbName;
             pcb.Click += ClickinOnPhoto;
+
 
 
 
@@ -59,7 +61,7 @@ namespace PhotoCallery
             //        top += 170;
 
             //    }
-                
+
             //}
 
 
@@ -72,50 +74,59 @@ namespace PhotoCallery
 
             foreach (var x in db.Photos.ToList())
             {
-
-                selectedtodelete = x.id;
-
+                if (px.Name == x.fileNamee)
+                {
+                    selectedtodelete = x.id;
+                }
 
             }
+
 
             btn.Text = "X";
             btn.Width = 20;
             btn.BackColor = Color.Red;
             btn.ForeColor = Color.White;
-            btn.Click += deletionPhotoo;
+            btn.Click += deletionPhotoo/*, Clickoncategory;*/;
 
-            
+
 
 
             px.Controls.Add(btn);
 
-            MessageBox.Show("If You want to delete a photo press red Cross");
+            MessageBox.Show("If You want to delete a photo Click twice red Cross");
 
-            ;
+
+
+            MessageBox.Show(px.Name);
+           
+
+
+
+
+
         }
 
         private void deletionPhotoo(object sender, EventArgs e)
         {
             var btn = sender as Button;
 
-            var pb = sender as PictureBox;
-
-            foreach (var x in db.Photos.ToList())
+            foreach(var x in db.Photos.ToList())
             {
-
-                if (selectedtodelete == x.id)
+                if(x.id== selectedtodelete)
                 {
-                    MessageBox.Show(selectedtodelete.ToString());
-
+                    db.Photos.Remove(x);
                 }
-                h
-
             }
+            btn.Click += Clickoncategory;
+
+
+
+
 
 
         }
 
-        public object AddingPhoto(DateTime daatetime, float FileSize, string FileLocation, string GetExt, int NewNamw)
+        public object AddingPhoto(DateTime daatetime, long FileSize, string FileLocation, string GetExt, int NewNamw)
         {
             var PhotoFileExample = new Photos() {
                 fileNamee = $"{NewNamw}{GetExt}",
@@ -183,7 +194,7 @@ namespace PhotoCallery
 
 
             AddingPhoto(daatetime, FileSize, FileLocation, GetExt, NewNamw);
-            InsertingPhotoToPanel(FullnewName);
+            InsertingPhotoToPanel(FullnewName,FileLocation );
 
         }
 
@@ -228,8 +239,9 @@ namespace PhotoCallery
             left = 30;
             foreach (var photo in SelectedPhotos)
             {
-                string fullynewname = $"{RootPathFolder}/demo/{photo.fileNamee}";
-                InsertingPhotoToPanel(fullynewname);
+                string fullynewname = $"{RootPathFolder}/demo/{photo.fileLocation}";
+                string justnewnam = photo.fileNamee;
+                InsertingPhotoToPanel(fullynewname, justnewnam);
 
 
 
@@ -248,21 +260,57 @@ namespace PhotoCallery
 
         }
 
-        private void categoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void showTheToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            List<double> phtosize=new List<double>();
+            List<Photos> phtosize2 = new List<Photos>();
 
 
-
-            ToolStripMenuItem MnuStripItem = new ToolStripMenuItem();
-            MnuStripItem.ForeColor = Color.Red;
-            foreach (var rw in db.Categories.ToList())
+            foreach (var photo in db.Photos.ToList())
             {
-
-                MnuStripItem.ForeColor = Color.Red;
+                var a =Convert.ToDouble(photo.fileSize);
+                phtosize.Add(a);
             }
 
+            for (int o= 0; o<5; o++)
+            {
+                phtosize.Sort();
+                phtosize.Reverse();    
+                
+                foreach(var photo in db.Photos.ToList())
+                {
+                    if (photo.fileSize==phtosize[o])
+                    {
+                        phtosize2.Add(photo);
+                    }
+                }
+
+            }
+
+            foreach(var photo in phtosize2)
+            {
+                //panel1.Controls.Clear();
+
+                //var pcb = new PictureBox();
+                //string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
+                //pcb.Image = Image.FromFile(fullyname);
+                //pcb.Top = top;
+                //pcb.Width = 160;
+                //pcb.Height = 160;
+                //pcb.SizeMode = PictureBoxSizeMode.StretchImage;
+                //pcb.Left = left;
+                //left += pcb.Width + 20;
+                //panel1.Controls.Add(pcb);
+
+                //pcb.Click += ClickinOnPhoto;
+
+                MessageBox.Show(photo.fileSize.ToString());
+            }
+
+            
+            
         }
-
-
     }
 }

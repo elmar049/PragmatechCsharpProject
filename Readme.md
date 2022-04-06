@@ -47,3 +47,13 @@
 - The [issues](https://github.com/elmar049/PragmatechCsharpProject/issues) page is a good place to visit if you want to pick up some task. It has a list of things that are to be implemented in the near future
 
 
+
+htpp:
+
+Request/responce: (Client-server model)There are client which are browsers which are used to get any type of info we need from a server.
+Client it is kinda a person that is going to kithech to get a food, meanwhile kitchen is a Responce to your request, which is giving you what you want.
+
+Htpp is stateless, it is when client and server is know each other only during the current request...if they want againg to communicate they need send reqeust to each other.
+
+Method get: it is simple when we type in a browser adress where we want to jump or by clicking on hyperlinks we can move from one page to another.
+
