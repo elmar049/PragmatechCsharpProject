@@ -19,6 +19,7 @@ namespace PhotoCallery
         string RootPathFolder = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).ToString()).ToString();
         PhotoCalleryEntities db = new PhotoCalleryEntities();
         int FindRightIndex;
+        int FindRightIndex2;
         int selectedtodelete;
 
 
@@ -33,6 +34,7 @@ namespace PhotoCallery
             }
 
             comboBox.DataSource = comboboxlist;
+            ComboxobTodeleteCategory.DataSource = comboboxlist;
 
         }
         public void InsertingPhotoToPanel(string fullyname, string pcbName)
@@ -81,28 +83,15 @@ namespace PhotoCallery
 
             }
 
-
             btn.Text = "X";
             btn.Width = 20;
             btn.BackColor = Color.Red;
             btn.ForeColor = Color.White;
-            btn.Click += deletionPhotoo/*, Clickoncategory;*/;
-
-
-
-
+            btn.Click += deletionPhotoo;
+            btn.Click += Clickoncategory;
             px.Controls.Add(btn);
 
             MessageBox.Show("If You want to delete a photo Click twice red Cross");
-
-
-
-            MessageBox.Show(px.Name);
-           
-
-
-
-
 
         }
 
@@ -110,19 +99,15 @@ namespace PhotoCallery
         {
             var btn = sender as Button;
 
-            foreach(var x in db.Photos.ToList())
+            foreach (var x in db.Photos.ToList())
             {
-                if(x.id== selectedtodelete)
+                if (x.id == selectedtodelete)
                 {
                     db.Photos.Remove(x);
+                    db.SaveChanges();
                 }
             }
             btn.Click += Clickoncategory;
-
-
-
-
-
 
         }
 
@@ -141,32 +126,31 @@ namespace PhotoCallery
             db.SaveChanges();
             return PhotoFileExample;
 
-
-
         }
+        public void AddingCategoryToPane()
+        {
+            int left2 = 30;
+            foreach (var click in db.Categories.ToList())
+            {
+                Button label = new Button();
+                label.Text = click.CategoryName;
+                label.Top = 20;
+                label.Left = left2;
+                left2 += label.Width + 20;
+                panelForCategories.Controls.Add(label);
+               
+                label.Click += Clickoncategory;
+
+            }
+        }
+
 
 
         public Form1()
         {
             InitializeComponent();
             ComboList();
-
-
-
-
-
-            foreach (var click in db.Categories.ToList())
-            {
-                Button label = new Button();
-                label.Text = click.CategoryName;
-                label.Top = 80;
-                label.Left = left;
-                left += label.Width + 20;
-                this.Controls.Add(label);
-                label.Click += Clickoncategory;
-
-            }
-
+            AddingCategoryToPane();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -194,7 +178,7 @@ namespace PhotoCallery
 
 
             AddingPhoto(daatetime, FileSize, FileLocation, GetExt, NewNamw);
-            InsertingPhotoToPanel(FullnewName,FileLocation );
+            InsertingPhotoToPanel(FullnewName, FileLocation);
 
         }
 
@@ -208,6 +192,8 @@ namespace PhotoCallery
 
             db.Categories.Add(newCateg);
             db.SaveChanges();
+            panelForCategories.Controls.Clear();
+            AddingCategoryToPane();
             ComboList();
 
         }
@@ -239,7 +225,7 @@ namespace PhotoCallery
             left = 30;
             foreach (var photo in SelectedPhotos)
             {
-                string fullynewname = $"{RootPathFolder}/demo/{photo.fileLocation}";
+                string fullynewname = $"{RootPathFolder}/{photo.fileLocation}";  //zdes ya demo uubral slovo
                 string justnewnam = photo.fileNamee;
                 InsertingPhotoToPanel(fullynewname, justnewnam);
 
@@ -250,38 +236,29 @@ namespace PhotoCallery
 
         }
 
-        public void deletionPhoto()
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        
 
         private void showTheToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            List<double> phtosize=new List<double>();
+            panel1.Controls.Clear();
+            int left2 = 0;
+            List<double> phtosize = new List<double>();
             List<Photos> phtosize2 = new List<Photos>();
 
 
             foreach (var photo in db.Photos.ToList())
             {
-                var a =Convert.ToDouble(photo.fileSize);
+                var a = Convert.ToDouble(photo.fileSize);
                 phtosize.Add(a);
             }
 
-            for (int o= 0; o<5; o++)
+            for (int o = 0; o < 5; o++)
             {
                 phtosize.Sort();
-                phtosize.Reverse();    
-                
-                foreach(var photo in db.Photos.ToList())
+                phtosize.Reverse();
+
+                foreach (var photo in db.Photos.ToList())
                 {
-                    if (photo.fileSize==phtosize[o])
+                    if (photo.fileSize == phtosize[o])
                     {
                         phtosize2.Add(photo);
                     }
@@ -289,28 +266,172 @@ namespace PhotoCallery
 
             }
 
-            foreach(var photo in phtosize2)
+            foreach (var photo in phtosize2)
             {
-                //panel1.Controls.Clear();
 
-                //var pcb = new PictureBox();
-                //string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
-                //pcb.Image = Image.FromFile(fullyname);
-                //pcb.Top = top;
-                //pcb.Width = 160;
-                //pcb.Height = 160;
-                //pcb.SizeMode = PictureBoxSizeMode.StretchImage;
-                //pcb.Left = left;
-                //left += pcb.Width + 20;
-                //panel1.Controls.Add(pcb);
 
-                //pcb.Click += ClickinOnPhoto;
+                var pcb = new PictureBox();
+                string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
+                pcb.Image = Image.FromFile(fullyname);
+                pcb.Top = top;
+                pcb.Width = 160;
+                pcb.Height = 160;
+                pcb.SizeMode = PictureBoxSizeMode.StretchImage;
+                pcb.Left = left2;
+                left2 += pcb.Width + 20;
+                panel1.Controls.Add(pcb);
 
-                MessageBox.Show(photo.fileSize.ToString());
+
+
             }
 
-            
-            
+
+
+        }
+
+        private void show5LastUploadedPhotosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            int left3 = 0;
+            List<DateTime> dtm = new List<DateTime>();
+            List<Photos> dtm2 = new List<Photos>(5);
+
+
+            foreach (var photo in db.Photos.ToList())
+            {
+                var a = photo.fileAddDate.GetValueOrDefault();
+                dtm.Add(a);
+
+            }
+
+
+            for (int o = 0; o < 5; o++)
+            {
+                dtm.Sort();
+                dtm.Reverse();
+
+                foreach (var photo in db.Photos.ToList())
+                {
+
+                    if (photo.fileAddDate == dtm[o])
+                    {
+                        dtm2.Add(photo);
+
+                    }
+                }
+
+            }
+
+
+
+            foreach (var photo in dtm2)
+            {
+
+
+                var pcb = new PictureBox();
+                string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
+                pcb.Image = Image.FromFile(fullyname);
+                pcb.Top = top;
+                pcb.Width = 160;
+                pcb.Height = 160;
+                pcb.SizeMode = PictureBoxSizeMode.StretchImage;
+                pcb.Left = left3;
+                left3 += pcb.Width + 20;
+                panel1.Controls.Add(pcb);
+
+                MessageBox.Show(photo.fileAddDate.ToString());
+
+
+            }
+
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void showPhotosWithjpgExtentionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            int left4 = 0;
+
+            List<string> phtosize = new List<string>() { ".JPG", ".jpg", ".Jpg" };
+            List<Photos> phtosize2 = new List<Photos>();
+
+
+
+
+
+            foreach (var str in phtosize)
+            {
+                foreach (var photo in db.Photos.ToList())
+                {
+                    if (photo.fileExtention == str)
+                    {
+                        phtosize2.Add(photo);
+                    }
+                }
+            }
+
+
+
+
+
+            foreach (var photo in phtosize2)
+            {
+
+
+                var pcb = new PictureBox();
+                string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
+                pcb.Image = Image.FromFile(fullyname);
+                pcb.Top = top;
+                pcb.Width = 160;
+                pcb.Height = 160;
+                pcb.SizeMode = PictureBoxSizeMode.StretchImage;
+                pcb.Left = left4;
+                left4 += pcb.Width + 20;
+                panel1.Controls.Add(pcb);
+
+
+
+            }
+
+        }
+
+        private void CategoryDeleteButton_Click(object sender, EventArgs e)
+        {
+            foreach (var click in db.Categories.ToList())
+            {
+                if (ComboxobTodeleteCategory.SelectedItem.ToString() == click.CategoryName)
+                {
+                    FindRightIndex2 = click.id;
+                    db.Categories.Remove(click);
+                    db.SaveChanges();
+
+                }
+
+            }
+
+
+            foreach (var click in db.Photos.ToList())
+            {
+                if (FindRightIndex2 == click.fileCategoryId)
+                {
+                    db.Photos.Remove(click);
+                    db.SaveChanges();
+                }
+            }
+
+            panelForCategories.Controls.Clear();
+            AddingCategoryToPane();
+            ComboList();
+
+
+
+
+
+
         }
     }
 }
