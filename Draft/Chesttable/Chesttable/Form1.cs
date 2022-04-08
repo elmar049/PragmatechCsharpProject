@@ -60,33 +60,33 @@ namespace Chesttable
                 
                 
 
-                for (int k = 0; k < 8; k++)
-                {
+                //for (int k = 0; k < 8; k++)
+                //{
                     
-                    y++;
+                //    y++;
 
-                    if (y % 2 == 0)
-                    {
-                        Button btn = new Button();
-                        btn.BackColor = Color.White;
-                        btn.Size = new Size(50, 50);
-                        btn.Left = x;
-                        x += 50;
-                        Controls.Add(btn);
-                        btn.Top = x2;                      
-                    }
-                    if (y % 2 == 1)
-                    {
-                        Button btn = new Button();
-                        btn.BackColor = Color.Black;
-                        btn.Size = new Size(50, 50);
-                        btn.Top = x2;
-                        btn.Left = x;
-                        x += 50;
-                        Controls.Add(btn);                   
-                    }
+                //    if (y % 2 == 0)
+                //    {
+                //        Button btn = new Button();
+                //        btn.BackColor = Color.White;
+                //        btn.Size = new Size(50, 50);
+                //        btn.Left = x;
+                //        x += 50;
+                //        Controls.Add(btn);
+                //        btn.Top = x2;                      
+                //    }
+                //    if (y % 2 == 1)
+                //    {
+                //        Button btn = new Button();
+                //        btn.BackColor = Color.Black;
+                //        btn.Size = new Size(50, 50);
+                //        btn.Top = x2;
+                //        btn.Left = x;
+                //        x += 50;
+                //        Controls.Add(btn);                   
+                //    }
                    
-                }
+                //}
                 x2 += 50;
                
 
