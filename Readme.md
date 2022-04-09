@@ -57,3 +57,10 @@ Htpp is stateless, it is when client and server is know each other only during t
 
 Method get: it is simple when we type in a browser adress where we want to jump or by clicking on hyperlinks we can move from one page to another.
 
+
+Get:  Need just transfer a data with filters, but if we want to send smth secure or with big volume of info, it is better to use Post:
+When we have method: Get, adress panel in a browsers will be changed, but in Post method adress panel will be unchanged
+
+POST;  ne prosto vzya i zaqruzil, a on poslal zapros v Server, server vozvrawaet resultat, a browser obrabotal...koqda mi najimaem na SEND v POST methode, on prosit ctob server prinyal etu infu i zaqruzil na server, a potom mi poluchaet otvet
+
+Difference with Get and Post, if we send this link to another user, tht user will be able to get the same page like a previous one only withing GET, but not in a POST
