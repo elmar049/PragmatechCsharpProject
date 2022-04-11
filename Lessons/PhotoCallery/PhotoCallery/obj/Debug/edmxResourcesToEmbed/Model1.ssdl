@@ -5,7 +5,7 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="CategoryName" Type="varchar" MaxLength="50" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityType Name="Photos">
     <Key>
@@ -15,7 +15,7 @@
     <Property Name="fileNamee" Type="varchar" MaxLength="100" />
     <Property Name="fileSize" Type="float" />
     <Property Name="fileExtention" Type="varchar" MaxLength="10" />
-    <Property Name="fileAddDate" Type="date" />
+    <Property Name="fileAddDate" Type="datetime" />
     <Property Name="fileLocation" Type="varchar" MaxLength="150" />
     <Property Name="fileCategoryId" Type="int" />
   </EntityType>

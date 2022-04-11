@@ -7,7 +7,7 @@
       <Diagram DiagramId="01b9c9cf74274533b2edcf5549329d17" Name="Diagram1">
         <EntityTypeShape EntityType="PhotoCalleryModel.Categories" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
         <EntityTypeShape EntityType="PhotoCalleryModel.Photos" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="PhotoCalleryModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PhotoCalleryModel.sysdiagrams" Width="1.5" PointX="0.875" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="PhotoCalleryModel.from_cat_to_photos" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

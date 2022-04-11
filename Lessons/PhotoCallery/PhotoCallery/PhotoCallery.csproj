@@ -139,11 +139,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="demo\02.JPG" />
-    <Content Include="demo\03.jpg" />
-    <Content Include="demo\1.jpg" />
-    <Content Include="demo\549..JPG" />
-    <Content Include="demo\555.jpg" />
+    <Content Include="demo\512.JPG" />
+    <Content Include="demo\519.JPG" />
+    <Content Include="demo\584.JPG" />
+    <Content Include="demo\81.JPG" />
+    <Content Include="demo\834.JPG" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -170,6 +170,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

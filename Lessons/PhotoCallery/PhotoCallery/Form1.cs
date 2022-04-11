@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PhotoCallery;
+
 
 
 namespace PhotoCallery
@@ -42,8 +44,8 @@ namespace PhotoCallery
             var pcb = new PictureBox();
             pcb.Image = Image.FromFile(fullyname);
             pcb.Top = top;
-            pcb.Width = 160;
-            pcb.Height = 160;
+            pcb.Width = Image.FromFile(fullyname).Width / 10;
+            pcb.Height = Image.FromFile(fullyname).Height / 10;
             pcb.SizeMode = PictureBoxSizeMode.StretchImage;
             pcb.Left = left;
             left += pcb.Width + 20;
@@ -91,7 +93,7 @@ namespace PhotoCallery
             btn.Click += Clickoncategory;
             px.Controls.Add(btn);
 
-            MessageBox.Show("If You want to delete a photo Click twice red Cross");
+            //MessageBox.Show("If You want to delete a photo Click twice red Cross");
 
         }
 
@@ -101,13 +103,18 @@ namespace PhotoCallery
 
             foreach (var x in db.Photos.ToList())
             {
+                var a = $"{RootPathFolder}/{x.fileLocation}";
                 if (x.id == selectedtodelete)
                 {
                     db.Photos.Remove(x);
+                    //File.Delete(a);
                     db.SaveChanges();
                 }
+
             }
             btn.Click += Clickoncategory;
+
+
 
         }
 
@@ -240,7 +247,7 @@ namespace PhotoCallery
         private void showTheToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            int left2 = 0;
+            int left2 = 30;
             List<double> phtosize = new List<double>();
             List<Photos> phtosize2 = new List<Photos>();
 
@@ -274,8 +281,8 @@ namespace PhotoCallery
                 string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
                 pcb.Image = Image.FromFile(fullyname);
                 pcb.Top = top;
-                pcb.Width = 160;
-                pcb.Height = 160;
+                pcb.Width = Image.FromFile(fullyname).Width / 10;
+                pcb.Height = Image.FromFile(fullyname).Height / 10;
                 pcb.SizeMode = PictureBoxSizeMode.StretchImage;
                 pcb.Left = left2;
                 left2 += pcb.Width + 20;
@@ -292,7 +299,7 @@ namespace PhotoCallery
         private void show5LastUploadedPhotosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            int left3 = 0;
+            int left3 = 30;
             List<DateTime> dtm = new List<DateTime>();
             List<Photos> dtm2 = new List<Photos>(5);
 
@@ -332,8 +339,8 @@ namespace PhotoCallery
                 string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
                 pcb.Image = Image.FromFile(fullyname);
                 pcb.Top = top;
-                pcb.Width = 160;
-                pcb.Height = 160;
+                pcb.Width = Image.FromFile(fullyname).Width / 10;
+                pcb.Height = Image.FromFile(fullyname).Height / 10;
                 pcb.SizeMode = PictureBoxSizeMode.StretchImage;
                 pcb.Left = left3;
                 left3 += pcb.Width + 20;
@@ -354,7 +361,7 @@ namespace PhotoCallery
         private void showPhotosWithjpgExtentionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
-            int left4 = 0;
+            int left4 = 30;
 
             List<string> phtosize = new List<string>() { ".JPG", ".jpg", ".Jpg" };
             List<Photos> phtosize2 = new List<Photos>();
@@ -386,8 +393,8 @@ namespace PhotoCallery
                 string fullyname = $"{RootPathFolder}/demo/{photo.fileNamee}";
                 pcb.Image = Image.FromFile(fullyname);
                 pcb.Top = top;
-                pcb.Width = 160;
-                pcb.Height = 160;
+                pcb.Width = Image.FromFile(fullyname).Width / 10;
+                pcb.Height = Image.FromFile(fullyname).Height / 10;
                 pcb.SizeMode = PictureBoxSizeMode.StretchImage;
                 pcb.Left = left4;
                 left4 += pcb.Width + 20;
@@ -406,6 +413,15 @@ namespace PhotoCallery
                 if (ComboxobTodeleteCategory.SelectedItem.ToString() == click.CategoryName)
                 {
                     FindRightIndex2 = click.id;
+                    foreach (var click2 in db.Photos.ToList())
+                    {
+                        if (FindRightIndex2 == click2.fileCategoryId)
+                        {
+                            db.Photos.Remove(click2);
+                            db.SaveChanges();
+                        }
+                    }
+
                     db.Categories.Remove(click);
                     db.SaveChanges();
 
@@ -414,14 +430,6 @@ namespace PhotoCallery
             }
 
 
-            foreach (var click in db.Photos.ToList())
-            {
-                if (FindRightIndex2 == click.fileCategoryId)
-                {
-                    db.Photos.Remove(click);
-                    db.SaveChanges();
-                }
-            }
 
             panelForCategories.Controls.Clear();
             AddingCategoryToPane();
@@ -432,6 +440,28 @@ namespace PhotoCallery
 
 
 
+        }
+
+        private void allPhotosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            int left5 = 30;
+            foreach (var click in db.Photos.ToList())
+            {
+                
+
+                var pcb = new PictureBox();
+                string fullyname = $"{RootPathFolder}/demo/{click.fileNamee}";
+                pcb.Image = Image.FromFile(fullyname);
+                pcb.Top = top;
+
+                pcb.Width = Image.FromFile(fullyname).Width/10;
+                pcb.Height = Image.FromFile(fullyname).Height/10;
+                pcb.SizeMode = PictureBoxSizeMode.StretchImage;
+                pcb.Left = left5;
+                left5 += pcb.Width + 20;
+                panel1.Controls.Add(pcb);
+            }
         }
     }
 }

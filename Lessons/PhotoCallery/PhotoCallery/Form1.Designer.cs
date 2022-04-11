@@ -45,6 +45,7 @@
             this.CategoryDeleteButton = new System.Windows.Forms.Button();
             this.ComboxobTodeleteCategory = new System.Windows.Forms.ComboBox();
             this.panelForCategories = new System.Windows.Forms.Panel();
+            this.allPhotosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -146,7 +147,8 @@
             this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.categoriesToolStripMenuItem});
+            this.categoriesToolStripMenuItem,
+            this.allPhotosToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Size = new System.Drawing.Size(1141, 28);
@@ -187,6 +189,13 @@
             this.panelForCategories.Size = new System.Drawing.Size(1116, 78);
             this.panelForCategories.TabIndex = 13;
             // 
+            // allPhotosToolStripMenuItem
+            // 
+            this.allPhotosToolStripMenuItem.Name = "allPhotosToolStripMenuItem";
+            this.allPhotosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.allPhotosToolStripMenuItem.Text = "All Photos";
+            this.allPhotosToolStripMenuItem.Click += new System.EventHandler(this.allPhotosToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,7 +214,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Gallery";
-            
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
@@ -231,6 +239,7 @@
         private System.Windows.Forms.Button CategoryDeleteButton;
         private System.Windows.Forms.ComboBox ComboxobTodeleteCategory;
         private System.Windows.Forms.Panel panelForCategories;
+        private System.Windows.Forms.ToolStripMenuItem allPhotosToolStripMenuItem;
     }
 }
 
