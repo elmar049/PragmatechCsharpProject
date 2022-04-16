@@ -28,16 +28,16 @@ namespace WBPOSTGET.Controllers
         public ActionResult Index(string ad)
         {
 
-
+            /*ViewBag.Alluser = db.OneUser.ToList();  */    ///bu olmasa iwlemir
 
             //ViewBag.name = Request.Params["adin"];
             //ViewBag.surname = Request.Params["soyad"];
-            //var singleuser = new OneUser();
+            //var 2singleuser = new OneUser();
             //singleuser.username = ViewBag.name;
             //singleuser.usersurname = ViewBag.surname;
             //ViewBag.Alluser = db.OneUser.ToList();
             //db.OneUser.Add(singleuser);
-            //db.SaveChanges();
+            //db.SaveChanges();                       //pcmu ne zdes
 
             return View();
         }
@@ -46,20 +46,26 @@ namespace WBPOSTGET.Controllers
 
         public ActionResult Listname()
         {
-
             ViewBag.name = Request.Params["adin"];
             ViewBag.surname = Request.Params["soyad"];
 
             var singleuser = new OneUser();
             singleuser.username = ViewBag.name;
-            singleuser.usersurname = ViewBag.surname;
-            ViewBag.Alluser = db.OneUser.ToList();
+            singleuser.usersurname = ViewBag.surname;           
             db.OneUser.Add(singleuser);
             db.SaveChanges();
-            return RedirectToAction("index");
+            ViewBag.Alluser = db.OneUser.ToList();
+            return View();
         }
        
-       
+       public ActionResult delete()
+        {
+            var id=Request.Params["id"];
+            var x= db.OneUser.Find(Convert.ToInt32(id));
+            db.OneUser.Remove(x);
+            db.SaveChanges();
+            return RedirectToAction("Listname");
+        }
 
     }
 }

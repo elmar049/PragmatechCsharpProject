@@ -26,13 +26,14 @@
 
             @foreach (var x in ViewBag.Alluser)
             {
-                <tr>
+            <tr>
 
-                    <th scope="row">@x.id</th>
-                    <td>@x.username</td>
-                    <td>@x.usersurname</td>
+                <th scope="row">@x.id</th>
+                <td>@x.username</td>
+                <td>@x.usersurname</td>
+                <td> <a href="/main/delete?id=@x.id">Delete</a></td>
 
-                </tr>
+            </tr>
             }
 
         </tbody>
