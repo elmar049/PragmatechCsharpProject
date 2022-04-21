@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\obj\Debug\delegateapp1.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\obj\Debug\delegateapp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\obj\Debug\delegateapp1.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\bin\Debug\delegateapp1.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\bin\Debug\delegateapp1.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\bin\Debug\delegateapp1.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\obj\Debug\delegateapp1.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\Lessons\delegateapp1\delegateapp1\obj\Debug\delegateapp1.pdb
