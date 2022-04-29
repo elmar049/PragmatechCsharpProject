@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Author";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+@using MiniWeb.Models;
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form action="/author/create" method="post">
+                <div class="mb-3">
+
+                    <input type="text" class="form-control" name="AuthorName" placeholder="Insert Author Name">
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Actions</th>
+
+                    </tr>
+                </thead>
+                @foreach (Author xxx in ViewBag.Authorss)
+                {
+                    <tbody>
+                        <tr>
+                            <th scope="row">@xxx.id</th>
+                            <td>@xxx.AuthorName</td>
+                            <td>
+                                <a href="/author/delete?id=@xxx.id">Delete</a> <a href="/author/update?id=@xxx.id">Update<a>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                }
+
+            </table>
+
+
+        </div>
+    </div>
+
+</div>
+
+

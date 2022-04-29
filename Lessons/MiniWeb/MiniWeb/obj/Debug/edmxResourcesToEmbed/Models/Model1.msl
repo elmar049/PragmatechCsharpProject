@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogModelStoreContainer" CdmEntityContainer="BlogEntities">
+    <EntitySetMapping Name="Author">
+      <EntityTypeMapping TypeName="BlogModel.Author">
+        <MappingFragment StoreEntitySet="Author">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Category">
+      <EntityTypeMapping TypeName="BlogModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Post">
+      <EntityTypeMapping TypeName="BlogModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="PostTitle" ColumnName="PostTitle" />
+          <ScalarProperty Name="PostShortInfo" ColumnName="PostShortInfo" />
+          <ScalarProperty Name="PostPhoto" ColumnName="PostPhoto" />
+          <ScalarProperty Name="PostContent" ColumnName="PostContent" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+          <ScalarProperty Name="Author_Id" ColumnName="Author_Id" />
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

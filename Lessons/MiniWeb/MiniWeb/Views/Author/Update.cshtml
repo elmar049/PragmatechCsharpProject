@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+@using MiniWeb.Models;
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form action="/author/Update?id=@ViewBag.of.id" method="post">   @*//burda mesele odurki bu updates sehfesine yox ID-inii elave edek*@
+                <div class="mb-3">
+
+                    <input type="text" class="form-control" name="AuthorName" placeholder="Insert Author Name"  value="@ViewBag.of">
+                     <h3>Please delete the current name, and iserted updated one</h3>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

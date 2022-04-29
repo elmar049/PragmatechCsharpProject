@@ -13,18 +13,19 @@ namespace MiniWeb.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
 
+        public ActionResult Author()
+        {
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
+
+
+        public ActionResult Post()
+        {
             return View();
         }
+
     }
 }

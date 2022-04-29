@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AuthorName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PostTitle" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PostShortInfo" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="PostPhoto" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PostContent" Type="text" />
+    <Property Name="PostDate" Type="datetime" Nullable="false" />
+    <Property Name="isActive" Type="bit" />
+    <Property Name="Author_Id" Type="int" />
+    <Property Name="Category_Id" Type="int" />
+  </EntityType>
+  <Association Name="FK__Post__Author_Id__286302EC">
+    <End Role="Author" Type="Self.Author" Multiplicity="0..1" />
+    <End Role="Post" Type="Self.Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Author">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="Author_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Post__Category_I__29572725">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Post" Type="Self.Post" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Post">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BlogModelStoreContainer">
+    <EntitySet Name="Author" EntityType="Self.Author" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Post__Author_Id__286302EC" Association="Self.FK__Post__Author_Id__286302EC">
+      <End Role="Author" EntitySet="Author" />
+      <End Role="Post" EntitySet="Post" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Post__Category_I__29572725" Association="Self.FK__Post__Category_I__29572725">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Post" EntitySet="Post" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
