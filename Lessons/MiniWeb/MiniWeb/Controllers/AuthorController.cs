@@ -48,10 +48,10 @@ namespace MiniWeb.Controllers
 
 
 
-        public ActionResult Update(int ? id)
+        public ActionResult Update(int? id)
         {
             Author xxx=db.Author.Find(id);
-            ViewBag.of= xxx.AuthorName;
+            ViewBag.author= xxx;
 
             return View();
         }
