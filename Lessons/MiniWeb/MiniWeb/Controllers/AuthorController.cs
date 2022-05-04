@@ -31,6 +31,11 @@ namespace MiniWeb.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+    /// <summary>
+    /// /wine
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
 
 
 
