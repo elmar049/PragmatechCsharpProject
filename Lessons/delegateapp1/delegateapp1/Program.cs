@@ -8,6 +8,8 @@ namespace delegateapp1
 {
     internal class Program
     {
+        public delegate int XXX(int x); // bu yaratdigmiz trubada yani pipelne gondere bileceymizi METHODLARIN OSOSBIY XSUSIYETLERI OLMALLIDI
+        // 3CU SOZ O DEMEKDIKI HEMEN O METHODUNUN RETUNR TIPI NEDIR, PARAMETR INT X-ISE HEMEN METHON NE QEBUL EDECEYNI DEYIR
         static void Main(string[] args)
         {
             List<string> list = new List<string>()
