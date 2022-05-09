@@ -31,17 +31,15 @@ namespace MiniWeb.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-    /// <summary>
-    /// /wine
-    /// </summary>
-    /// <param name="id"></param>
-    /// <returns></returns>
+  
+
+        // 1ci sual: author author burda neyniyir evvala
 
 
 
 
-
-        public ActionResult delete(int id)   // VSEQDA SUDA NUJNO PISAT IMMENO  name tag iz FORM inputa // plus eto dopisanniy Route ot ruki, koqda pishesh adress v htmls-e to tam obezatelno dopiwi pered slovom DELETE, ewe imya controllera
+        public ActionResult delete(int id)   // VSEQDA SUDA NUJNO PISAT IMMENO  name tag iz FORM inputa //
+                                             // plus eto dopisanniy Route ot ruki, koqda pishesh adress v htmls-e to tam obezatelno dopiwi pered slovom DELETE, ewe imya controllera
         {
             Author author = db.Author.Find(id);
             db.Author.Remove(author);

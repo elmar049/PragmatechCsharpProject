@@ -8,8 +8,11 @@ namespace delegateapp1
 {
     internal class Program
     {
-        public delegate int XXX(int x); // bu yaratdigmiz trubada yani pipelne gondere bileceymizi METHODLARIN OSOSBIY XSUSIYETLERI OLMALLIDI
-        // 3CU SOZ O DEMEKDIKI HEMEN O METHODUNUN RETUNR TIPI NEDIR, PARAMETR INT X-ISE HEMEN METHON NE QEBUL EDECEYNI DEYIR
+        /* public delegate List<string> XXX(int x);*/ // bu yaratdigmiz trubada yani pipelne gondere bileceymizi METHODLARIN OSOSBIY XSUSIYETLERI OLMALLIDI
+                                                      // 3CU SOZ O DEMEKDIKI HEMEN O METHODUNUN RETUNR TIPI NEDIR, PARAMETR INT X-ISE HEMEN METHON NE QEBUL EDECEYNI DEYIR0
+
+        public delegate int xxx(int x);
+
         static void Main(string[] args)
         {
             List<string> list = new List<string>()
@@ -17,84 +20,104 @@ namespace delegateapp1
                 "Bir", "Iki", "uc", "offFffff",
             };
 
+            var newDELFOO = new xxx(app1);
+            //newDELFOO += app2;
+            newDELFOO(20);
 
-            
+            Console.WriteLine(newDELFOO(10));
 
-            fiteryap3(list);
 
-            foreach (var item in fiteryap3(list))
-            {
-                Console.WriteLine(item);
-            }
+
+
+            //fiteryap3(list);
+
+            //foreach (var item in fiteryap3(list))
+            //{
+            //    Console.WriteLine(item);
+            //}
 
         }
 
-        public static List<string> fiteryap1(List<string> xxx)
+
+
+        public static int app1(int h)
         {
-            List<string> newlst = new List<string>();
-            foreach (var lis in xxx)
-            {
-                if (lis.Count() >= 5)
-                {
-                    newlst.Add(lis);
-                }
-
-            }
-            return newlst;
+            return h + 2;
         }
 
-
-
-        public static List<string> fiteryap2(List<string> xxx)
+        public static int app2(int h)
         {
-            List<string> newlst = new List<string>();
-            foreach (var lis in xxx)
-            {
-                if (char.IsUpper(lis.ToCharArray().First()))
-                {
-                    newlst.Add(lis);
-                }
-
-            }
-            return newlst;
+            return h - 2;
         }
 
 
-        public static List<string> fiteryap3(List<string> xxx)
-        {
-          
-            List<string> newlst = new List<string>();
-            foreach (var lis in xxx)
-            {
-                if (lis.Contains('e'))
-                {
-                    newlst.Add(lis);
-                }
-                
-            }
 
-            return newlst;
-        }
+        //public static List<string> fiteryap1(List<string> xxx)
+        //{
+        //    List<string> newlst = new List<string>();
+        //    foreach (var lis in xxx)
+        //    {
+        //        if (lis.Count() >= 5)
+        //        {
+        //            newlst.Add(lis);
+        //        }
 
-        public static List<string> fiteryap4(List<string> xxx)
-        {
+        //    }
+        //    return newlst;
+        //}
 
-            List<string> newlst = new List<string>();
-            
-            foreach (var lis in xxx)
-            {
-                foreach (var lis2 in lis)
-                {
-                    if (char.IsUpper(lis2))
-                    {
-                        newlst.Add(lis);
-                    }
-                }
-                
-            }
 
-            return newlst;
-        }
+
+        //public static List<string> fiteryap2(List<string> xxx)
+        //{
+        //    List<string> newlst = new List<string>();
+        //    foreach (var lis in xxx)
+        //    {
+        //        if (char.IsUpper(lis.ToCharArray().First()))
+        //        {
+        //            newlst.Add(lis);
+        //        }
+
+        //    }
+        //    return newlst;
+        //}
+
+
+        //public static List<string> fiteryap3(List<string> xxx)
+        //{
+
+        //    List<string> newlst = new List<string>();
+        //    foreach (var lis in xxx)
+        //    {
+        //        if (lis.Contains('e'))
+        //        {
+        //            newlst.Add(lis);
+        //        }
+
+        //    }
+
+        //    return newlst;
+        //}
+
+        //public static List<string> fiteryap4(List<string> xxx)
+        //{
+
+        //    List<string> newlst = new List<string>();
+
+        //    foreach (var lis in xxx)
+        //    {
+        //        foreach (var lis2 in lis)
+        //        {
+        //            if (char.IsUpper(lis2))
+        //            {
+        //                newlst.Add(lis);
+        //            }
+        //        }
+
+        //    }
+
+        //    return newlst;
+        //}
 
 
 
