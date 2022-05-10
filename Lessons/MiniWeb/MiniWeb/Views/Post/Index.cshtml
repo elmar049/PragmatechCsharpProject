@@ -4,5 +4,114 @@
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h2>Index FOR POST</h2>
+
+@{
+    ViewBag.Title = "Author";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+@using MiniWeb.Models;
+@*@// men burda ne yazimki o awagdan viewbagin icindeki oxunsun ve ozu gelsin noqteni qoyanda;*@
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form action="/post/create" method="post">
+                <div class="mb-3">
+                    <label for="PostTitle" class="form-label">Insert Title:</label>
+                    <input type="text" class="form-control" name="PostTitle" placeholder="PostTitle">
+                </div>
+
+                <div class="mb-3">
+                    <label for="PostTitle" class="form-label">Insert Title:</label>
+                    <input type="text" class="form-control" name="PostShortInfo" placeholder="PostShortInfo">
+                </div>
+
+                <div class="mb-3">
+                    <label for="PostPhoto" class="form-label">Choose image:</label>
+                    <input type="file" class="form-control" name="PostPhoto">
+                </div>
+
+                <div class="mb-3">
+                    <label for="PostContent" class="form-label">For Typing:</label>
+                    <textarea class="form-control" name="PostContent" placeholder="PostContent"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="PostDate" class="form-label">Choose date:</label>
+                    <input type="date" class="form-control" name="PostDate">
+                </div>
+                <div class="mb-3">
+                    <label for="isActive" class="btn btn-outline-primary">Checkbox:</label>
+                    <input type="checkbox"  name="IsActive">
+                </div>
+                <div class="mb-3">
+                    <label for="PostAuthor" class="form-label">Choose an author:</label>
+                    <select class="form-select" aria-label="Default select example" name="PostAuthor">
+                        @foreach (var item in ViewBag.auth)
+                        {
+
+                            <option value="@item.AuthorName">@item.AuthorName</option>
+                           
+                        }
+
+
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="PostCategory" class="form-label">Choose a category:</label>
+                    <select class="form-select" aria-label="Default select example" name="PostCategory">
+                        @foreach (var item in ViewBag.catg)
+                        {
+
+                            <option value="@item.CategoryName">@item.CategoryName</option>
+                            
+                        }
+                    </select>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+
+            @*<table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Actions</th>
+
+                    </tr>
+                </thead>
+                @foreach (Author xxx in ViewBag.Authorss)
+                {
+                    <tbody>
+                        <tr>
+                            <th scope="row">@xxx.id</th>
+                            <td>@xxx.AuthorName</td>
+                            <td>
+                                <a href="/author/delete?id=@xxx.id">Delete</a> <a href="/author/update?id=@xxx.id">Update<a>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                }
+
+            </table>*@
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
 
