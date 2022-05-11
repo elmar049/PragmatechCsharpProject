@@ -53,7 +53,7 @@
                         @foreach (var item in ViewBag.auth)
                         {
 
-                            <option value="@item.AuthorName">@item.AuthorName</option>
+                            <option value="@item.id">@item.AuthorName</option>
                            
                         }
 
@@ -67,7 +67,7 @@
                         @foreach (var item in ViewBag.catg)
                         {
 
-                            <option value="@item.CategoryName">@item.CategoryName</option>
+                            <option value="@item.id">@item.CategoryName</option>
                             
                         }
                     </select>

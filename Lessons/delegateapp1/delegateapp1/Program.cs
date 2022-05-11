@@ -11,20 +11,20 @@ namespace delegateapp1
         /* public delegate List<string> XXX(int x);*/ // bu yaratdigmiz trubada yani pipelne gondere bileceymizi METHODLARIN OSOSBIY XSUSIYETLERI OLMALLIDI
                                                       // 3CU SOZ O DEMEKDIKI HEMEN O METHODUNUN RETUNR TIPI NEDIR, PARAMETR INT X-ISE HEMEN METHON NE QEBUL EDECEYNI DEYIR0
 
-        public delegate int xxx(int x);
+        public delegate bool xxx(string xxx);
 
         static void Main(string[] args)
         {
             List<string> list = new List<string>()
             {
-                "Bir", "Iki", "uc", "offFffff",
+                "Bir", "Iki", "hhjnnjnjnjnjnuc", "offFffff",
             };
 
-            var newDELFOO = new xxx(app1);
+            //var newDELFOO = new xxx(app1);
             //newDELFOO += app2;
-            newDELFOO(20);
+            //newDELFOO(20);
 
-            Console.WriteLine(newDELFOO(10));
+            //Console.WriteLine(newDELFOO(20));
 
 
 
@@ -36,19 +36,29 @@ namespace delegateapp1
             //    Console.WriteLine(item);
             //}
 
+            
+            var a = fiteryap4(item => item.Count() < 4, list);
+
+            foreach (var item in a)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
         }
 
 
 
-        public static int app1(int h)
-        {
-            return h + 2;
-        }
+        //public static int app1(int h)
+        //{
+        //    return h + 2;
+        //}
 
-        public static int app2(int h)
-        {
-            return h - 2;
-        }
+        //public static int app2(int h)
+        //{
+        //    return h - 2;
+        //}
 
 
 
@@ -119,6 +129,25 @@ namespace delegateapp1
         //    return newlst;
         //}
 
+
+        public static List<string> fiteryap4(xxx del, List<string> hhh)
+        {
+
+            List<string> newlst = new List<string>();
+
+            foreach (var lis in hhh)
+            {
+
+                if (del(lis))
+                {
+                    newlst.Add(lis);
+                }
+
+
+            }
+
+            return newlst;
+        }
 
 
 
