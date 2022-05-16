@@ -28,6 +28,8 @@ namespace delegateapp1
 
 
 
+            xxx yenidel = filterrr;
+            yenidel+=
 
             //fiteryap3(list);
 
@@ -36,8 +38,8 @@ namespace delegateapp1
             //    Console.WriteLine(item);
             //}
 
-            
-            var a = fiteryap4(item => item.Count() < 4, list);
+
+            var a = fiteryap4(yenidel, list);
 
             foreach (var item in a)
             {
@@ -45,9 +47,18 @@ namespace delegateapp1
             }
 
 
-
+            
         }
 
+        public static bool filterrr(string itemm)
+        {
+            return itemm.Count() > 4;
+        }
+
+        public static bool filterrr2(string itemm)
+        {
+            return itemm.Count() > 4;
+        }
 
 
         //public static int app1(int h)
@@ -128,6 +139,8 @@ namespace delegateapp1
 
         //    return newlst;
         //}
+
+
 
 
         public static List<string> fiteryap4(xxx del, List<string> hhh)
