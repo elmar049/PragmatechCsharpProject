@@ -1,0 +1,8 @@
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\bin\Debug\CommonPrefix.exe.config
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\bin\Debug\CommonPrefix.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\bin\Debug\CommonPrefix.pdb
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\obj\Debug\CommonPrefix.csproj.AssemblyReference.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\obj\Debug\CommonPrefix.csproj.SuggestedBindingRedirects.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\obj\Debug\CommonPrefix.csproj.CoreCompileInputs.cache
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\obj\Debug\CommonPrefix.exe
+C:\Users\elmar\Desktop\PragmatechCsharpProject\HomeWorkTask\CommonPrefix\CommonPrefix\obj\Debug\CommonPrefix.pdb
